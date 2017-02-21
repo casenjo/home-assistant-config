@@ -53,3 +53,5 @@ media_player: !include media_players.yaml
 
 # This will override the default home zone
 zone: !include_dir_list zones
+
+device_tracker: !include_dir_merge_list device_tracker
