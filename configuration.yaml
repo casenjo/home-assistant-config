@@ -50,3 +50,6 @@ tts:
   platform: google
 
 media_player: !include media_players.yaml
+
+# This will override the default home zone
+zone: !include_dir_list zones
