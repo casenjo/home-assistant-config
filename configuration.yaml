@@ -48,3 +48,5 @@ sensor:
 # Text to speech
 tts:
   platform: google
+
+media_player: !include media_players.yaml
