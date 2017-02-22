@@ -1,7 +1,7 @@
-platform: nmap_tracker
-hosts: 192.168.1.1/24
-track_new_devices: no
-consider_home: 180
-interval_seconds: 10
-home_interval: 5
-scan_options: " --privileged -sP "
+- platform: nmap_tracker
+  hosts: 192.168.1.1/25
+  track_new_devices: no
+  interval_seconds: 10 # Seconds between scans
+  home_interval: 5 # Number of minutes devices will not be scanned for while they're home
+  consider_home: 120 # Seconds to wait till marking someone as not home
+  scan_options: " --privileged -sP "
