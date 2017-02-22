@@ -15,9 +15,6 @@ customize:
   configurator.plex_media_server:
     hidden: true
 
-# Show links to resources in log and frontend
-introduction:
-
 # Enables the frontend
 frontend:
 
@@ -53,11 +50,30 @@ sensor:
 tts:
   platform: google
 
-media_player: !include media_players.yaml
+media_player: !include ha_configs/media_players.yaml
 
 # This will override the default home zone
-zone: !include_dir_list zones
+zone: !include_dir_list ha_configs/zones
 
-device_tracker: !include_dir_merge_list device_tracker
+device_tracker: !include_dir_merge_list ha_configs/device_tracker
 
-light: !include lights.yaml
+light: !include ha_configs/lights.yaml
+
+group:
+  living_room_lights:
+    name: Living Room Lights
+    entities:
+      - light.side_lamp
+      - light.dinner_lamp
+
+automation:
+  alias: Turn on lights when arriving home
+  initial_state: False
+  hide_entity: False
+  trigger:
+    platform: state
+    entity_id: device_tracker.cristian_phone
+    state: 'home'
+  action:
+    service: light.turn_on # formatted as domain.name
+    entity_id: group.living_room_lights
