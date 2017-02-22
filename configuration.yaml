@@ -59,12 +59,7 @@ device_tracker: !include_dir_merge_list ha_configs/device_tracker
 
 light: !include ha_configs/lights.yaml
 
-group:
-  living_room_lights:
-    name: Living Room Lights
-    entities:
-      - light.side_lamp
-      - light.dinner_lamp
+group: !include_dir_merge_named ha_configs/groups
 
 automation:
   alias: Turn on lights when arriving home
