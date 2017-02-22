@@ -61,14 +61,4 @@ light: !include ha_configs/lights.yaml
 
 group: !include_dir_merge_named ha_configs/groups
 
-automation:
-  alias: Turn on lights when arriving home
-  initial_state: False
-  hide_entity: False
-  trigger:
-    platform: state
-    entity_id: device_tracker.cristian_phone
-    state: 'home'
-  action:
-    service: light.turn_on # formatted as domain.name
-    entity_id: group.living_room_lights
+automation: !include_dir_merge_list ha_configs/automations/

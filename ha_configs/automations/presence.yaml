@@ -1,0 +1,10 @@
+- alias: Turn on lights when arriving home
+  initial_state: True
+  hide_entity: False
+  trigger:
+    platform: state
+    entity_id: device_tracker.cristian_phone
+    state: 'home'
+  action:
+    service: light.turn_on # formatted as domain.name
+    entity_id: group.living_room_lights
