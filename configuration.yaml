@@ -14,6 +14,8 @@ homeassistant:
 customize:
   configurator.plex_media_server:
     hidden: true
+  configurator.xbr55x800e:
+    hidden: true
 
 # Enables the frontend
 frontend:
