@@ -1,2 +1,20 @@
-platform: lifx
-broadcast: 192.168.1.255
+- platform: lifx
+  broadcast: 192.168.1.255
+
+- platform: mqtt
+  brightness_command_topic: "smartthings/Table Light/level/cmd"
+  brightness_state_topic: "smartthings/Table Light/level/state"
+  command_topic: "smartthings/Table Light/switch/cmd"
+  name: "Table Light"
+  payload_off: "off"
+  payload_on: "on"
+  state_topic: "smartthings/Table Light/switch/state"
+
+- platform: mqtt
+  brightness_command_topic: "smartthings/Dresser Light/level/cmd"
+  brightness_state_topic: "smartthings/Dresser Light/level/state"
+  command_topic: "smartthings/Dresser Light/switch/cmd"
+  name: "Dresser Light"
+  payload_off: "off"
+  payload_on: "on"
+  state_topic: "smartthings/Dresser Light/switch/state"

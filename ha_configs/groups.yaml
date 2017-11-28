@@ -1,0 +1,11 @@
+Bedroom:
+  entities:
+    - light.dresser_light
+    - light.nightstand_laurie
+
+
+livingroom:
+  entities:
+    - light.corner_light
+    - media_player.sony_bravia_tv
+  name: Living Room
