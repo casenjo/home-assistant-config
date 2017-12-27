@@ -17,6 +17,8 @@ homeassistant:
       hidden: true
     media_player.xbr55x800e:
       hidden: true
+    group.arrival:
+      hidden: true
 
 # Show links to resources in log and frontend
 introduction:
