@@ -18,3 +18,21 @@
   payload_off: "off"
   payload_on: "on"
   state_topic: "smartthings/Dresser Light/switch/state"
+
+- platform: mqtt
+  brightness_command_topic: "smartthings/Laurie's Nightstand/level/cmd"
+  brightness_state_topic: "smartthings/Laurie's Nightstand/level/state"
+  command_topic: "smartthings/Laurie's Nightstand/switch/cmd"
+  name: "Nightstand Light (Laurie)"
+  payload_off: "off"
+  payload_on: "on"
+  state_topic: "smartthings/Laurie's Nightstand/switch/state"
+
+- platform: mqtt
+  brightness_command_topic: "smartthings/Bathroom Light/level/cmd"
+  brightness_state_topic: "smartthings/Bathroom Light/level/state"
+  command_topic: "smartthings/Bathroom Light/switch/cmd"
+  name: "Bathroom Light"
+  payload_off: "off"
+  payload_on: "on"
+  state_topic: "smartthings/Bathroom Light/switch/state"
