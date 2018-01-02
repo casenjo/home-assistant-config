@@ -29,10 +29,10 @@
   state_topic: "smartthings/Laurie's Nightstand/switch/state"
 
 - platform: mqtt
-  brightness_command_topic: "smartthings/Bathroom Light/level/cmd"
-  brightness_state_topic: "smartthings/Bathroom Light/level/state"
-  command_topic: "smartthings/Bathroom Light/switch/cmd"
+  brightness_command_topic: "smartthings/Bathroom light/level/cmd"
+  brightness_state_topic: "smartthings/Bathroom light/level/state"
+  command_topic: "smartthings/Bathroom light/switch/cmd"
   name: "Bathroom Light"
   payload_off: "off"
   payload_on: "on"
-  state_topic: "smartthings/Bathroom Light/switch/state"
+  state_topic: "smartthings/Bathroom light/switch/state"
