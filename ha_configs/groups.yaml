@@ -16,3 +16,9 @@ arrival:
     - light.corner_light
     - light.table_light
   name: Arrival Lights
+
+lights_evening:
+  entities:
+    - light.corner_light
+    - light.table_light
+  name: Evening Lights
