@@ -19,6 +19,8 @@ homeassistant:
       hidden: true
     group.arrival:
       hidden: true
+    group.lights_evening:
+      hidden: true
 
 # Show links to resources in log and frontend
 introduction:
@@ -94,5 +96,5 @@ device_tracker:
 
 scene: !include_dir_merge_list ha_configs/scenes
 group: !include ha_configs/groups.yaml
-automation: !include_dir_merge_list ha_configs/automations
+automation: !include_dir_list ha_configs/automations
 script: !include scripts.yaml
