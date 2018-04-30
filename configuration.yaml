@@ -23,7 +23,7 @@ homeassistant:
       hidden: true
 
 # Show links to resources in log and frontend
-introduction:
+# introduction:
 
 # Enables the frontend
 frontend:
@@ -78,6 +78,7 @@ mqtt:
   discovery: True
 
 media_player: !include ha_configs/media_players.yaml
+
 light: !include ha_configs/lights.yaml
 
 switch:
@@ -90,11 +91,13 @@ switch:
 
 device_tracker:
   - platform: nmap_tracker
-    track_new_devices: false
-    home_interval: 5
+    new_device_defaults:
+      track_new_devices: False
+    consider_home: 15
     hosts: 192.168.1.0/24
 
 scene: !include_dir_merge_list ha_configs/scenes
 group: !include ha_configs/groups.yaml
 automation: !include_dir_list ha_configs/automations
 script: !include scripts.yaml
+
