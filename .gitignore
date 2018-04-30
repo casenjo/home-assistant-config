@@ -1,7 +1,12 @@
 *.sublime-project
 *.sublime-workspace
-secrets.yaml
-known_devices.yaml
-entity_registry.yaml
-tts/
 deps/
+tts/
+
+bravia.conf
+entity_registry.yaml
+home-assistant_v2.db
+home-assistant.log
+known_devices.yaml
+sabnzbd.conf
+secrets.yaml
