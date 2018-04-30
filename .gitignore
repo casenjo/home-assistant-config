@@ -2,3 +2,6 @@
 *.sublime-workspace
 secrets.yaml
 known_devices.yaml
+entity_registry.yaml
+tts/
+deps/
