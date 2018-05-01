@@ -1,12 +1,17 @@
+.HA_VERSION
+.uuid
 *.sublime-project
 *.sublime-workspace
 deps/
 tts/
 
+automations.yaml
 bravia.conf
+customize.yaml
 entity_registry.yaml
 home-assistant_v2.db
 home-assistant.log
 known_devices.yaml
 sabnzbd.conf
+scripts.yaml
 secrets.yaml
