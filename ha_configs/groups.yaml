@@ -15,10 +15,12 @@ arrival:
   entities:
     - light.corner_light
     - light.table_light
+    - light.ambient_light_counter
   name: Arrival Lights
 
 lights_evening:
   entities:
     - light.corner_light
     - light.table_light
+    - light.ambient_light_counter
   name: Evening Lights
