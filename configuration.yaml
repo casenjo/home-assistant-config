@@ -33,7 +33,7 @@ config:
 
 http:
   # Uncomment this to add a password (recommended!)
-  api_password: !secret api_pwd
+  api_password: !secret home_api_pwd
   # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
   # base_url: example.duckdns.org:8123
 
