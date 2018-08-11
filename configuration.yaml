@@ -21,6 +21,8 @@ homeassistant:
       hidden: true
     group.lights_evening:
       hidden: true
+    sensor.entrance_motion_sensor:
+      hidden: true
 
 # Show links to resources in log and frontend
 # introduction:
@@ -64,6 +66,9 @@ sun:
 # Weather prediction
 sensor:
   - platform: yr
+  - platform: mqtt
+    name: "Entrance Motion Sensor"
+    state_topic: "smartthings/Entrance Motion Sensor/motion/state"
 
 # Text to speech
 tts:
