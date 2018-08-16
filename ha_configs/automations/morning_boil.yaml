@@ -1,0 +1,9 @@
+alias: Turn on kettle in the evening
+initial_state: 'on'
+hide_entity: True
+trigger:
+  platform: time
+  at: '05:55:00'
+action:
+  service: switch.turn_on
+  entity_id: switch.kettle
