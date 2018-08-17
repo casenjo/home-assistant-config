@@ -3,7 +3,7 @@ initial_state: 'on'
 hide_entity: True
 trigger:
   platform: time
-  at: '19:00:00'
+  at: '19:45:00'
 condition:
   condition: or
   conditions:
