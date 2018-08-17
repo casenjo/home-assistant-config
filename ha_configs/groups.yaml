@@ -8,6 +8,7 @@ livingroom:
   entities:
     - light.corner_light
     - light.ambient_light_counter
+    - light.ambient_light_tv
     - media_player.sony_bravia_tv
     - media_player.living_room_speaker
   name: Living Room
@@ -17,6 +18,7 @@ arrival:
     - light.corner_light
     - light.table_light
     - light.ambient_light_counter
+    - light.ambient_light_tv
   name: Arrival Lights
 
 lights_evening:
@@ -24,4 +26,5 @@ lights_evening:
     - light.corner_light
     - light.table_light
     - light.ambient_light_counter
+    - light.ambient_light_tv
   name: Evening Lights
