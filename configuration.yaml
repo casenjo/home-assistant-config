@@ -23,6 +23,10 @@ homeassistant:
       hidden: true
     sensor.entrance_motion_sensor:
       hidden: true
+    light.centralite_4257050rzhac_04ae3ef2_1:
+      hidden: true
+    sensor.centralite_4257050rzhac_04ae3ef2_1:
+      hidden: true
 
 # Show links to resources in log and frontend
 # introduction:
