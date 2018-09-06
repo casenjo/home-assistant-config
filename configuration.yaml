@@ -86,14 +86,6 @@ media_player: !include ha_configs/media_players.yaml
 
 light: !include ha_configs/lights.yaml
 
-switch:
-  platform: mqtt
-  name: "Kettle"
-  state_topic: "smartthings/Kettle/switch/state"
-  command_topic: "smartthings/Kettle/switch/cmd"
-  payload_on: "on"
-  payload_off: "off"
-
 device_tracker:
   - platform: nmap_tracker
     new_device_defaults:
@@ -106,3 +98,14 @@ group: !include ha_configs/groups.yaml
 automation: !include_dir_list ha_configs/automations
 script: !include scripts.yaml
 
+zwave:
+  usb_path: /dev/ttyACM0
+  polling_interval: 30000
+  device_config:
+    light.bathroom_light_level:
+      polling_intensity: 1
+
+# Enable zigbee devices
+zha:
+  usb_path: /dev/ttyUSB1
+  database_path: /config/zigbee.db
