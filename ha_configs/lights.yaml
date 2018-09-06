@@ -28,11 +28,5 @@
   payload_on: "on"
   state_topic: "smartthings/Laurie's Nightstand/switch/state"
 
-- platform: mqtt
-  brightness_command_topic: "smartthings/Bathroom light/level/cmd"
-  brightness_state_topic: "smartthings/Bathroom light/level/state"
-  command_topic: "smartthings/Bathroom light/switch/cmd"
-  name: "Bathroom Light"
-  payload_off: "off"
-  payload_on: "on"
-  state_topic: "smartthings/Bathroom light/switch/state"
+- platform: zwave
+  scan_interval: 2
