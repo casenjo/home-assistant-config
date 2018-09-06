@@ -5,5 +5,5 @@ trigger:
   platform: time
   at: '05:55:00'
 action:
-  service: switch.turn_on
-  entity_id: switch.kettle
+  service: light.turn_on
+  entity_id: light.centralite_4257050rzhac_04ae3ef2_1
