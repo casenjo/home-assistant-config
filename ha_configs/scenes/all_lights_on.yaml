@@ -5,7 +5,6 @@
   entities:
     light.corner_light: on
     light.table_light: on
-    light.nightstand_light_laurie: on
-    light.dresser_light: on
+    light.office_light: on
     light.ambient_light_counter: on
     light.ambient_light_tv: on

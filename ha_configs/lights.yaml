@@ -1,32 +1,9 @@
 - platform: lifx
   broadcast: 192.168.1.255
 
-- platform: mqtt
-  brightness_command_topic: "smartthings/Table Light/level/cmd"
-  brightness_state_topic: "smartthings/Table Light/level/state"
-  command_topic: "smartthings/Table Light/switch/cmd"
-  name: "Table Light"
-  payload_off: "off"
-  payload_on: "on"
-  state_topic: "smartthings/Table Light/switch/state"
-
-- platform: mqtt
-  brightness_command_topic: "smartthings/Dresser Light/level/cmd"
-  brightness_state_topic: "smartthings/Dresser Light/level/state"
-  command_topic: "smartthings/Dresser Light/switch/cmd"
-  name: "Dresser Light"
-  payload_off: "off"
-  payload_on: "on"
-  state_topic: "smartthings/Dresser Light/switch/state"
-
-- platform: mqtt
-  brightness_command_topic: "smartthings/Laurie's Nightstand/level/cmd"
-  brightness_state_topic: "smartthings/Laurie's Nightstand/level/state"
-  command_topic: "smartthings/Laurie's Nightstand/switch/cmd"
-  name: "Nightstand Light (Laurie)"
-  payload_off: "off"
-  payload_on: "on"
-  state_topic: "smartthings/Laurie's Nightstand/switch/state"
-
 - platform: zwave
   scan_interval: 2
+
+- platform: zha
+  entity_id: light.osram_lightify_a19_onoffdim_10_year_00a65e64_3
+  friendly_name: Table Light

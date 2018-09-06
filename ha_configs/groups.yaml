@@ -1,9 +1,3 @@
-Bedroom:
-  entities:
-    - light.dresser_light
-    - light.nightstand_light_laurie
-
-
 livingroom:
   entities:
     - light.corner_light
