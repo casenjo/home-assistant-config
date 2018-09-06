@@ -25,7 +25,11 @@ homeassistant:
       hidden: true
     light.centralite_4257050rzhac_04ae3ef2_1:
       hidden: true
-    sensor.centralite_4257050rzhac_04ae3ef2_1:
+    sensor.centralite_4257050rzhac_04ae3ef2_1_2820:
+      hidden: true
+    binary_sensor.smartthings_motionv4_0102c904_1_1280:
+      hidden: true
+    sensor.smartthings_motionv4_0102c904_1_1026:
       hidden: true
 
 # Show links to resources in log and frontend
@@ -70,9 +74,6 @@ sun:
 # Weather prediction
 sensor:
   - platform: yr
-  - platform: mqtt
-    name: "Entrance Motion Sensor"
-    state_topic: "smartthings/Entrance Motion Sensor/motion/state"
 
 # Text to speech
 tts:
