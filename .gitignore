@@ -14,3 +14,10 @@ known_devices.yaml
 sabnzbd.conf
 scripts.yaml
 secrets.yaml
+
+OZW_Log.txt
+options.xml
+pyozw.sqlite
+zigbee.db
+zwcfg_*.xml
+zwscene.xml
