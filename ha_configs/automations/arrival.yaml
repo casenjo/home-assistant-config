@@ -2,16 +2,35 @@ alias: Turn on lights when arriving home
 initial_state: 'on'
 hide_entity: True
 trigger:
-  - platform: state
-    entity_id: device_tracker.cristian
-    to: 'home'
+  platform: state
+  entity_id: binary_sensor.smartthings_motionv4_0102c904_1_1280
+  to: 'on'
 condition:
-  - condition: state
-    entity_id: device_tracker.laurie
-    state: 'not_home'
-  - condition: time
-    before: '23:00:00'
-    after: '18:00:00'
+  condition: and
+  conditions:
+    - condition: time
+      after: '19:00:00'
+    - condition: or
+      conditions:
+        - condition: and
+          conditions:
+            - condition: state
+              entity_id: device_tracker.laurie
+              state: 'not_home'
+            - condition: state
+              entity_id: device_tracker.cristian
+              state: 'not_home'
+        - condition: and
+          conditions:
+            - condition: state
+              entity_id: device_tracker.laurie
+              state: 'home'
+            - condition: state
+              entity_id: device_tracker.cristian
+              state: 'not_home'
+            - condition: time
+              before: '22:30:00'
 action:
   service: homeassistant.turn_on
   entity_id: group.arrival
+
