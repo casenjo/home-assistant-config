@@ -60,14 +60,6 @@ sensor:
 tts:
   - platform: google
 
-# MQTT Broker Config
-mqtt:
-  broker: 172.17.0.1
-  port: 1883
-  username: !secret mqttBrokerUsername
-  password: !secret mqttBrokerPassword
-  discovery: True
-
 media_player: !include ha_configs/media_players.yaml
 
 light: !include ha_configs/lights.yaml
