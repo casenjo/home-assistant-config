@@ -5,6 +5,7 @@
 deps/
 tts/
 .storage/
+.ios.conf
 
 automations.yaml
 bravia.conf
