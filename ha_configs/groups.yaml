@@ -5,6 +5,7 @@ livingroom:
     - light.ambient_light_tv
     - media_player.sony_bravia_tv
     - media_player.living_room_speaker
+    - media_player.pioneer_avr
   name: Living Room
 
 arrival:
