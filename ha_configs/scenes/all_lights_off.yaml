@@ -3,6 +3,7 @@
 #
 - name: All Lights Off
   entities:
+    light.bedroom_light: off
     light.corner_light: off
     light.table_light: off
     light.office_light: off
