@@ -5,6 +5,9 @@ trigger:
   platform: state
   entity_id: binary_sensor.smartthings_motionv5_010acf87_1_1280
   to: 'on'
+condition:
+  condition: time
+  after: '18:00:00'
 action:
   service: homeassistant.turn_on
   entity_id: light.office_light
