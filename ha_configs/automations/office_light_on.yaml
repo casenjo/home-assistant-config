@@ -1,0 +1,10 @@
+alias: Turn on office lights
+initial_state: 'on'
+hide_entity: True
+trigger:
+  platform: state
+  entity_id: binary_sensor.smartthings_motionv5_010acf87_1_1280
+  to: 'on'
+action:
+  service: homeassistant.turn_on
+  entity_id: light.office_light
