@@ -1,4 +1,23 @@
+default_view:
+  view: yes
+  icon: mdi:home
+  entities:
+    - device_tracker.cristian
+    - device_tracker.laurie
+    - scene.all_lights_off
+    - scene.all_lights_on
+bedroom:
+  name: Bedroom
+  view: yes
+  icon: mdi:hotel
+  entities:
+    - scene.all_lights_off
+    - light.bedroom_light
+
 livingroom:
+  name: Living Room
+  view: yes
+  icon: mdi:sofa
   entities:
     - light.corner_light
     - light.ambient_light_counter
@@ -6,20 +25,3 @@ livingroom:
     - media_player.sony_bravia_tv
     - media_player.living_room_speaker
     - media_player.pioneer_avr
-  name: Living Room
-
-arrival:
-  entities:
-    - light.corner_light
-    - light.table_light
-    - light.ambient_light_counter
-    - light.ambient_light_tv
-  name: Arrival Lights
-
-lights_evening:
-  entities:
-    - light.corner_light
-    - light.table_light
-    - light.ambient_light_counter
-    - light.ambient_light_tv
-  name: Evening Lights
