@@ -22,6 +22,13 @@ livingroom:
     - light.corner_light
     - light.ambient_light_counter
     - light.ambient_light_tv
+    - media_player.pioneer_avr
     - media_player.sony_bravia_tv
     - media_player.living_room_speaker
-    - media_player.pioneer_avr
+
+office:
+  name: Office
+  view: yes
+  icon: mdi:desktop-mac
+  entities:
+    - light.office_light
