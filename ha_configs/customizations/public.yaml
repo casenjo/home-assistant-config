@@ -46,3 +46,4 @@ zwave.aeotec_zw090_zstick_gen5_us:
   hidden: true
 zwave.unknown_node_3:
   hidden: true
+

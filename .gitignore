@@ -12,6 +12,7 @@ bravia.conf
 home-assistant_v2.db
 home-assistant.log
 known_devices.yaml
+private.yaml
 sabnzbd.conf
 scripts.yaml
 secrets.yaml
