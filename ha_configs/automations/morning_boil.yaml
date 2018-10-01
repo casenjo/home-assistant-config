@@ -1,4 +1,4 @@
-alias: Turn on kettle in the evening
+alias: Turn on kettle in the morning
 initial_state: 'on'
 hide_entity: True
 trigger:
