@@ -1,32 +1,34 @@
+binary_sensor.smartthings_motionv4_0102c904_1_1280:
+  hidden: true
+binary_sensor.smartthings_motionv5_010acf87_1_1280:
+  hidden: true
 configurator.plex_media_server:
-  hidden: true
-media_player.xbr55x800e:
-  hidden: true
-media_player.pioneer_avr_zone_2:
-  hidden: true
-media_player.pioneer_avr_zone_3: 
   hidden: true
 group.arrival:
   hidden: true
 group.lights_evening:
   hidden: true
-sensor.entrance_motion_sensor:
-  hidden: true
+light.bedroom_light:
+  friendly_name: 'Bedroom Light'
 light.centralite_4257050rzhac_04ae3ef2_1:
+  hidden: true
+light.office_light:
+  friendly_name: 'Office Light'
+light.table_light:
+  friendly_name: 'Table Light'
+media_player.pioneer_avr_zone_2:
+  hidden: true
+media_player.pioneer_avr_zone_3:
+  hidden: true
+media_player.xbr55x800e:
   hidden: true
 sensor.centralite_4257050rzhac_04ae3ef2_1_2820:
   hidden: true
-binary_sensor.smartthings_motionv4_0102c904_1_1280:
+sensor.dark_sky_temperature:
+  friendly_name: 'Outside Temp'
+sensor.entrance_motion_sensor:
   hidden: true
 sensor.smartthings_motionv4_0102c904_1_1026:
-  hidden: true
-light.table_light:
-  friendly_name: 'Table Light'
-light.office_light:
-  friendly_name: 'Office Light'
-light.bedroom_light:
-  friendly_name: 'Bedroom Light'
-binary_sensor.smartthings_motionv5_010acf87_1_1280:
   hidden: true
 sensor.smartthings_motionv5_010acf87_1_1026:
   hidden: true
@@ -46,4 +48,3 @@ zwave.aeotec_zw090_zstick_gen5_us:
   hidden: true
 zwave.unknown_node_3:
   hidden: true
-
