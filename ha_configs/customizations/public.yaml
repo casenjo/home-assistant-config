@@ -26,6 +26,14 @@ sensor.centralite_4257050rzhac_04ae3ef2_1_2820:
   hidden: true
 sensor.dark_sky_temperature:
   friendly_name: 'Outside Temp'
+sensor.dark_sky_cloud_coverage:
+  friendly_name: 'Cloud Coverage'
+sensor.dark_sky_precip:
+  friendly_name: 'Amount of Rain'
+sensor.dark_sky_precip_probability:
+  friendly_name: 'Probability of Rain'
+sensor.dark_sky_nearest_storm_distance:
+  friendly_name: 'Nearest Storm'
 sensor.entrance_motion_sensor:
   hidden: true
 sensor.smartthings_motionv4_0102c904_1_1026:
