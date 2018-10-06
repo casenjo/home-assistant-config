@@ -6,6 +6,7 @@ default_view:
     - device_tracker.laurie
     - group.all_lights
     - sensor.dark_sky_temperature
+    - sensor.hall_temperature
     - scene.all_lights_off
     - scene.all_lights_on
     - group.weather
