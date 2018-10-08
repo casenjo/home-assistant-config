@@ -12,7 +12,7 @@ default_view:
     - group.weather
 
 All Lights:
-  entities: 
+  entities:
     - light.corner_light
     - light.ambient_light_counter
     - light.ambient_light_tv
@@ -55,9 +55,26 @@ office:
   entities:
     - light.office_light
 
+# System Tab
+system:
+  name: System
+  view: yes
+  icon: mdi:settings
+  entities:
+    - group.pi_hole
+
+# Pi Hole Panel
+pi_hole:
+  name: Pi-Hole
+  entities:
+    - sensor.pihole_ads_blocked_today
+    - sensor.pihole_ads_percentage_blocked_today
+    - sensor.pihole_dns_queries_today
+
 Weather:
   - sun.sun
   - sensor.dark_sky_cloud_coverage
   - sensor.dark_sky_precip
   - sensor.dark_sky_precip_probability
   - sensor.dark_sky_nearest_storm_distance
+
