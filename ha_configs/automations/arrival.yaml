@@ -9,7 +9,7 @@ condition:
   condition: and
   conditions:
     - condition: time
-      after: '18:30:00'
+      after: '18:00:00'
     - condition: or
       conditions:
         - condition: and

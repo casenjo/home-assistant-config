@@ -10,7 +10,7 @@ tts/
 
 automations.yaml
 bravia.conf
-home-assistant_v2.db
+home-assistant_v2.db*
 home-assistant.log
 known_devices.yaml
 private.yaml
