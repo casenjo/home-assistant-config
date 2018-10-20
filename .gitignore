@@ -17,6 +17,7 @@ private.yaml
 sabnzbd.conf
 scripts.yaml
 secrets.yaml
+snapshot
 
 OZW_Log.txt
 options.xml
