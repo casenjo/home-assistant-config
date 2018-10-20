@@ -34,3 +34,9 @@
     - ads_blocked_today
     - ads_percentage_today
     - dns_queries_today
+
+- platform: template
+  sensors:
+    floorplan:
+      friendly_name: "Floorplan"
+      value_template: "on"

@@ -36,6 +36,26 @@ sensor.dark_sky_nearest_storm_distance:
   friendly_name: 'Nearest Storm'
 sensor.entrance_motion_sensor:
   hidden: true
+sensor.floorplan:
+  custom_ui_state_card: state-card-floorplan
+  config:
+    name: Home Floorplan
+    image: /local/custom_ui/floorplan/floorplan.svg
+    stylesheet: /local/custom_ui/floorplan/floorplan.css
+    groups:
+      - name: Lights
+        entities:
+        - light.ambient_light_counter
+        - light.ambient_light_tv
+        - light.corner_light
+        - light.centralite_4257050rzhac_04ae3ef2_1
+        states:
+          - state: 'on'
+            class: 'light-on'
+          - state: 'off'
+            class: 'light-off'
+        action:
+          service: toggle
 sensor.smartthings_motionv4_0102c904_1_1026:
   hidden: true
 sensor.smartthings_motionv5_010acf87_1_1026:
