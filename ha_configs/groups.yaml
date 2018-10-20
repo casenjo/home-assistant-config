@@ -87,9 +87,16 @@ Weather:
   - sensor.dark_sky_precip_probability
   - sensor.dark_sky_nearest_storm_distance
 
+# Floorplan subgroup to hold the sensor and also the main group to hold
+# the subgroup
+grp_floorplan:
+  name: Floorplan
+  entities:
+    - sensor.floorplan
+
 plan:
   name: Plan
   view: yes
   icon: mdi:home
   entities:
-    - sensor.floorplan
+    - group.grp_floorplan
