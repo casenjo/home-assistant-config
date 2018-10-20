@@ -5,6 +5,7 @@
 deps/
 tts/
 .storage/
+www/custom_ui/floorplan/floorplan.svg
 .ios.conf
 .homekit.state
 
