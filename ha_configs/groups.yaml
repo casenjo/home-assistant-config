@@ -3,7 +3,6 @@ default_view:
   icon: mdi:home
   entities:
     - device_tracker.cristian
-    - device_tracker.laurie
     - group.all_lights
     - sensor.dark_sky_temperature
     - sensor.hall_temperature
@@ -13,13 +12,15 @@ default_view:
 
 All Lights:
   entities:
-    - light.corner_light
     - light.ambient_light_counter
     - light.ambient_light_tv
-    - light.bedroom_light
-    - light.office_light
-    - light.table_light
     - light.bathroom_light
+    - light.corner_light
+    - light.left_nightstand_light
+    - light.office_light
+    - light.right_nightstand_light
+    - light.table_light
+    - light.window_light
 
 bedroom:
   name: Bedroom
@@ -27,15 +28,17 @@ bedroom:
   icon: mdi:hotel
   entities:
     - scene.all_lights_off
-    - light.bedroom_light
+    - light.left_nightstand_light
+    - light.right_nightstand_light
 
 # Living room
 living_room_lights:
   name: Lights
   entities:
-    - light.corner_light
     - light.ambient_light_counter
     - light.ambient_light_tv
+    - light.corner_light
+    - light.window_light
 
 living_room:
   name: Living Room
@@ -50,10 +53,11 @@ living_room:
 # Arrival automation lights group
 arrival:
   entities:
-    - light.corner_light
-    - light.table_light
     - light.ambient_light_counter
     - light.ambient_light_tv
+    - light.corner_light
+    - light.table_light
+    - light.window_light
   name: Arrival Lights
 
 # Office
