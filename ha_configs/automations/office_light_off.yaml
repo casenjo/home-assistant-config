@@ -9,7 +9,7 @@ trigger:
     seconds: 5
 condition:
   condition: time
-  after: '18:00:00'
+  after: '17:00:00'
 action:
   service: homeassistant.turn_off
   entity_id: light.office_light
