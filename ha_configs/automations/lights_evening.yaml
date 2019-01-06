@@ -3,16 +3,11 @@ initial_state: 'on'
 hide_entity: True
 trigger:
   platform: time
-  at: '18:00:00'
+  at: '17:00:00'
 condition:
-  condition: or
-  conditions:
-    - condition: state
-      entity_id: 'device_tracker.laurie'
-      state: 'home'
-    - condition: state
-      entity_id: 'device_tracker.cristian'
-      state: 'home'
+    condition: state
+    entity_id: 'device_tracker.cristian'
+    state: 'home'
 action:
   service: homeassistant.turn_on
   entity_id: group.lights_evening
