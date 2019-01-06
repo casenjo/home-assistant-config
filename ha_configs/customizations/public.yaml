@@ -12,10 +12,16 @@ light.bedroom_light:
   friendly_name: 'Bedroom Light'
 light.centralite_4257050rzhac_04ae3ef2_1:
   hidden: true
+light.left_nightstand_light:
+  friendly_name: 'Left Nightstand Light'
 light.office_light:
   friendly_name: 'Office Light'
+light.right_nightstand_light:
+  friendly_name: 'Right Nightstand Light'
 light.table_light:
   friendly_name: 'Table Light'
+light.window_light:
+  friendly_name: 'Window Light'
 media_player.pioneer_avr_zone_2:
   hidden: true
 media_player.pioneer_avr_zone_3:
