@@ -3,10 +3,13 @@
 #
 - name: All Lights Off
   entities:
-    light.bathroom_light: off
-    light.bedroom_light: off
-    light.corner_light: off
-    light.table_light: off
-    light.office_light: off
     light.ambient_light_counter: off
     light.ambient_light_tv: off
+    light.bathroom_light: off
+    light.corner_light: off
+    light.left_nightstand_light: off
+    light.office_light: off
+    light.right_nightstand_light: off
+    light.table_light: off
+    light.window_light: off
+
