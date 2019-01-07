@@ -48,7 +48,6 @@ living_room:
     - group.living_room_lights
     - media_player.pioneer_avr
     - media_player.sony_bravia_tv
-    - media_player.living_room_speaker
 
 # Arrival automation lights group
 arrival:
@@ -67,6 +66,7 @@ office:
   icon: mdi:desktop-mac
   entities:
     - light.office_light
+    - media_player.office__speaker
 
 # System Tab
 system:
