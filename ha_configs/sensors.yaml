@@ -40,3 +40,15 @@
     floorplan:
       friendly_name: "Floorplan"
       value_template: "on"
+
+- platform: teksavvy
+  api_key: !secret teksavvy_api_key
+  total_bandwidth: 0
+  monitored_variables:
+    - usage_gb
+    - onpeak_download
+    - onpeak_upload
+    - onpeak_total
+    - offpeak_download
+    - offpeak_upload
+    - offpeak_total
