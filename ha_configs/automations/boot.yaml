@@ -1,4 +1,5 @@
 alias: 'Reload groups'
+initial_state: 'on'
 trigger:
   - platform: event
     event_type: zwave.network_ready
