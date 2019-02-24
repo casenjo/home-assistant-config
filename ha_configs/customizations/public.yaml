@@ -66,8 +66,6 @@ sensor.smartthings_motionv4_0102c904_1_1026:
   hidden: true
 sensor.smartthings_motionv5_010acf87_1_1026:
   hidden: true
-zha.zha_210_16d_yf05__f1a24846:
-  hidden: true
 zha.zha_centralite_4257050rzhac_04ae3ef2:
   hidden: true
 zha.zha_osram_lightify_a19_onoffdim_10_year_00a63781:
