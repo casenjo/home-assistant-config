@@ -84,6 +84,17 @@ pi_hole:
     - sensor.pi_hole_ads_percentage_blocked_today
     - sensor.pi_hole_dns_queries_today
 
+# TekSavvy Panel
+teksavvy:
+  name: Bandwidth Usage
+  entities:
+    - sensor.teksavvy_usage
+    - sensor.teksavvy_on_peak_download
+    - sensor.teksavvy_on_peak_upload
+    - sensor.teksavvy_on_peak_total
+    - sensor.teksavvy_off_peak_download
+    - sensor.teksavvy_off_peak_upload
+    - sensor.teksavvy_off_peak_total
 Weather:
   - sun.sun
   - sensor.dark_sky_cloud_coverage
