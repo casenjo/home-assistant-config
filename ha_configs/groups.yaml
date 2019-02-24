@@ -75,6 +75,7 @@ system:
   icon: mdi:settings
   entities:
     - group.pi_hole
+    - group.teksavvy
 
 # Pi Hole Panel
 pi_hole:
