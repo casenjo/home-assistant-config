@@ -115,3 +115,18 @@ zha:
 
 homekit:
   auto_start: False
+  filter:
+    include_domains:
+      - light
+      - media_player
+      - device_tracker
+      - sensor
+  entity_config:
+      light.ambient_light_tv:
+        name: TV Light
+      light.ambient_light_counter:
+        name: Counter Light
+      light.table_light:
+        name: Entrance Light
+      sensor.hall_temperature:
+        name: Hall Temperature
