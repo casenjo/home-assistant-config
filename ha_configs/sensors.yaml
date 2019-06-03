@@ -35,12 +35,6 @@
     - ads_percentage_today
     - dns_queries_today
 
-- platform: template
-  sensors:
-    floorplan:
-      friendly_name: "Floorplan"
-      value_template: "on"
-
 - platform: teksavvy
   api_key: !secret teksavvy_api_key
   total_bandwidth: 0
