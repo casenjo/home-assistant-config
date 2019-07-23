@@ -1,0 +1,14 @@
+alias: Run Backup
+initial_state: 'on'
+hide_entity: True
+trigger:
+  platform: time
+  at: '02:00:00'
+condition:
+  condition: time
+  weekday:
+    - sun
+action:
+  service: hassio.addon_start
+  data:
+    addon: 3fce5735_remote_backup
