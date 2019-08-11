@@ -82,6 +82,9 @@ sun:
 weather:
   - platform: darksky
     api_key: !secret darksky_api_key
+    scan_interval:
+      # At least one should be specified (days/hours/minutes/seconds/milliseconds)
+      hours: 1
 
 # Text to speech
 tts:
