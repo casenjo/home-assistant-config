@@ -82,6 +82,7 @@ system:
   entities:
     - group.pi_hole
     - group.teksavvy
+    - group.nas_stats
 
 # Pi Hole Panel
 pi_hole:
@@ -104,6 +105,21 @@ teksavvy:
     - sensor.teksavvy_off_peak_download
     - sensor.teksavvy_off_peak_upload
     - sensor.teksavvy_off_peak_total
+
+# NAS Panel
+nas_stats:
+  name: NAS Stats
+  control: hidden
+  entities:
+    - sensor.nas_host_name
+    - sensor.nas_fan_rpm
+    - sensor.nas_temp_value
+    - sensor.nas_uptime
+    - sensor.nas_vol_1_free
+    - sensor.nas_vol_1_size
+    - sensor.nas_vol_2_free
+    - sensor.nas_vol_2_size
+
 Weather:
   control: hidden
   entities:
