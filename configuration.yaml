@@ -18,8 +18,7 @@ system_health:
 
 # Enables the frontend
 frontend:
-  extra_html_url:
-    - /local/custom_ui/state-card-floorplan.html
+    themes: !include_dir_merge_named themes
 # Enables configuration UI
 config:
 
