@@ -145,3 +145,5 @@
   contract: !secret hydroquebec_contract
   monitored_variables:
     - yesterday_total_consumption
+
+- platform: uptime
