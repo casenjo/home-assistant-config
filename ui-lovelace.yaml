@@ -74,12 +74,19 @@ views:
       - entities:
         - sensor.uptime
         type: entities
-      - entities:
-        - sensor.pi_hole_ads_blocked_today
-        type: custom:mini-graph-card
-        show:
-          points: true
-          labels: false
+      - cards:
+        - entities:
+          - entity: sensor.pi_hole_ads_blocked_today
+          type: custom:mini-graph-card
+          show:
+            points: true
+            labels: false
+        - entities:
+          - entity: sensor.speedtest_download
+          - entity: sensor.speedtest_upload
+          - entity: sensor.fast_com_download
+          type: custom:mini-graph-card
+        type: vertical-stack
       - entities:
         - entity: sensor.teksavvy_on_peak_download
           name: Download
@@ -91,11 +98,6 @@ views:
         update_interval: 5
         name: Bandwidth Usage
         icon: 'mdi:cloud-download'
-      - entities:
-        - entity: sensor.speedtest_download
-        - entity: sensor.speedtest_upload
-        - entity: sensor.fast_com_download
-        type: custom:mini-graph-card
       - entities:
           - entity: sensor.nas_fan_rpm
             icon: 'mdi:fan'
