@@ -1,0 +1,116 @@
+title: Home
+
+resources:
+  - url: /local/mini-graph-card-bundle.js?v=0.6.0
+    type: module
+
+views:
+  - badges:
+      - device_tracker.cristian
+      - sensor.dark_sky_temperature
+      - sensor.hall_temperature
+    cards:
+      - cards:
+          - entities:
+              - entity: light.ambient_light_counter
+              - entity: light.ambient_light_tv
+              - entity: light.corner_light
+              - entity: light.window_light
+              - entity: light.table_light
+              - entity: light.office_light
+              - entity: light.bathroom_light
+                name: Bathroom Light
+              - entity: light.right_nightstand_light
+              - entity: light.left_nightstand_light
+            title: Lights
+            type: entities
+        type: vertical-stack
+      - entity: weather.dark_sky
+        type: weather-forecast
+    icon: 'mdi:home'
+    path: default_view
+    title: default_view
+  - badges: []
+    cards:
+      - entity: light.right_nightstand_light
+        name: Right Nightstand
+        type: light
+      - entity: light.left_nightstand_light
+        name: Left Nightstand
+        theme: default
+        type: light
+    icon: 'mdi:hotel'
+    path: bedroom
+    title: Bedroom
+  - badges: []
+    cards:
+      - entities:
+          - light.ambient_light_counter
+          - light.ambient_light_tv
+          - light.corner_light
+          - light.window_light
+        show_header_toggle: true
+        title: Lights
+        type: entities
+      - entity: media_player.pioneer_avr
+        type: media-control
+      - entity: media_player.sony_bravia_tv
+        type: media-control
+    icon: 'mdi:sofa'
+    path: living_room
+    title: Living Room
+  - badges: []
+    cards:
+      - entity: light.office_light
+        name: ' '
+        type: light
+      - entity: media_player.office_speaker
+        type: media-control
+    icon: 'mdi:desktop-mac'
+    path: office
+    title: Office
+  - badges: []
+    cards:
+      - entities:
+        - sensor.pi_hole_ads_blocked_today
+        type: custom:mini-graph-card
+        show:
+          points: true
+          labels: false
+      - entities:
+          - sensor.teksavvy_usage
+          - sensor.teksavvy_on_peak_download
+          - sensor.teksavvy_on_peak_upload
+          - sensor.teksavvy_on_peak_total
+          - sensor.teksavvy_off_peak_download
+          - sensor.teksavvy_off_peak_upload
+          - sensor.teksavvy_off_peak_total
+        show_header_toggle: false
+        title: Bandwidth Usage
+        type: entities
+      - entities:
+          - entity: sensor.nas_fan_rpm
+            icon: 'mdi:fan'
+          - entity: sensor.nas_temp_value
+            name: Overall Temp
+          - entity: sensor.nas_uptime
+            icon: 'mdi:av-timer'
+          - entity: sensor.nas_vol_1_free
+            icon: 'mdi:chart-donut'
+            name: Vol 1 Free Space
+          - entity: sensor.nas_vol_1_size
+            icon: 'mdi:harddisk'
+            name: Vol 1 Total Space
+          - entity: sensor.nas_vol_2_free
+            icon: 'mdi:chart-donut'
+            name: Vol 2 Free Space
+          - entity: sensor.nas_vol_2_size
+            icon: 'mdi:harddisk'
+            name: Vol 2 Total Space
+        show_header_toggle: false
+        title: Netgear ReadyNAS
+        type: entities
+    icon: 'mdi:settings'
+    path: system
+    title: System
+
