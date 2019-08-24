@@ -5,6 +5,10 @@ resources:
     type: module
 
 views:
+  # Home view
+  icon: 'mdi:home'
+  path: default_view
+  title: default_view
   - badges:
       - device_tracker.cristian
       - sensor.dark_sky_temperature
@@ -27,9 +31,10 @@ views:
         type: vertical-stack
       - entity: weather.dark_sky
         type: weather-forecast
-    icon: 'mdi:home'
-    path: default_view
-    title: default_view
+  # Bedroom view
+  icon: 'mdi:hotel'
+  path: bedroom
+  title: Bedroom
   - badges: []
     cards:
       - entity: light.right_nightstand_light
@@ -39,9 +44,10 @@ views:
         name: Left Nightstand
         theme: default
         type: light
-    icon: 'mdi:hotel'
-    path: bedroom
-    title: Bedroom
+  # Living room view
+  icon: 'mdi:sofa'
+  path: living_room
+  title: Living Room
   - badges: []
     cards:
       - entities:
@@ -56,9 +62,10 @@ views:
         type: media-control
       - entity: media_player.sony_bravia_tv
         type: media-control
-    icon: 'mdi:sofa'
-    path: living_room
-    title: Living Room
+  # Office view
+  icon: 'mdi:desktop-mac'
+  path: office
+  title: Office
   - badges: []
     cards:
       - entity: light.office_light
@@ -66,9 +73,10 @@ views:
         type: light
       - entity: media_player.office_speaker
         type: media-control
-    icon: 'mdi:desktop-mac'
-    path: office
-    title: Office
+  # System view
+  icon: 'mdi:settings'
+  path: system
+  title: System
   - badges: []
     cards:
       - entities:
@@ -118,7 +126,4 @@ views:
         show_header_toggle: false
         title: Netgear ReadyNAS
         type: entities
-    icon: 'mdi:settings'
-    path: system
-    title: System
 
