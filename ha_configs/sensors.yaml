@@ -34,6 +34,8 @@
     - ads_blocked_today
     - ads_percentage_today
     - dns_queries_today
+    - queries_cached
+    - queries_forwarded
 
 - platform: teksavvy
   api_key: !secret teksavvy_api_key
