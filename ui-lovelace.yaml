@@ -78,16 +78,25 @@ views:
           points: true
           labels: false
       - entities:
-          - sensor.teksavvy_usage
-          - sensor.teksavvy_on_peak_download
-          - sensor.teksavvy_on_peak_upload
-          - sensor.teksavvy_on_peak_total
-          - sensor.teksavvy_off_peak_download
-          - sensor.teksavvy_off_peak_upload
-          - sensor.teksavvy_off_peak_total
-        show_header_toggle: false
-        title: Bandwidth Usage
-        type: entities
+        - entity: sensor.teksavvy_on_peak_download
+          name: Download
+        - entity: sensor.teksavvy_on_peak_upload
+          name: Upload
+        - entity: sensor.teksavvy_on_peak_total
+          name: Total
+        type: custom:mini-graph-card
+        name: Peak Internet Use
+        icon: 'mdi:server'
+      - entities:
+        - entity: sensor.teksavvy_off_peak_download
+          name: Download
+        - entity: sensor.teksavvy_off_peak_upload
+          name: Upload
+        - entity: sensor.teksavvy_off_peak_total
+          name: Total
+        type: custom:mini-graph-card
+        name: Off Peak Internet Use
+        icon: 'mdi:server'
       - entities:
           - entity: sensor.nas_fan_rpm
             icon: 'mdi:fan'
