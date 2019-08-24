@@ -139,3 +139,9 @@
     {% set size = ((val * 0.954) / 1000000 | float) | round(2) %}
     {{ size }} TB
 
+- platform: hydroquebec
+  username: !secret hydroquebec_user
+  password: !secret hydroquebec_pwd
+  contract: !secret hydroquebec_contract
+  monitored_variables:
+    - yesterday_total_consumption
