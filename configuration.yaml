@@ -19,6 +19,11 @@ system_health:
 # Enables the frontend
 frontend:
     themes: !include_dir_merge_named themes
+
+# Enables lovelace from YAML
+lovelace:
+  mode: yaml
+
 # Enables configuration UI
 config:
 
@@ -81,9 +86,7 @@ sun:
 weather:
   - platform: darksky
     api_key: !secret darksky_api_key
-    scan_interval:
-      # At least one should be specified (days/hours/minutes/seconds/milliseconds)
-      hours: 1
+    mode: 'hourly'
 
 # Text to speech
 tts:
