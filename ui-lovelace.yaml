@@ -88,8 +88,14 @@ views:
         type: custom:mini-graph-card
         hours_to_show: 720
         points_per_hour: 0.05
+        update_interval: 5
         name: Bandwidth Usage
         icon: 'mdi:cloud-download'
+      - entities:
+        - entity: sensor.speedtest_download
+        - entity: sensor.speedtest_upload
+        - entity: sensor.fast_com_download
+        type: custom:mini-graph-card
       - entities:
           - entity: sensor.nas_fan_rpm
             icon: 'mdi:fan'

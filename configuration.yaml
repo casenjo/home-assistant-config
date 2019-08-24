@@ -151,3 +151,13 @@ homekit:
           - feature: play_pause
           - feature: play_stop
           - feature: toggle_mute
+
+# Services: SpeedTest
+speedtestdotnet:
+  scan_interval:
+    minutes: 60
+
+# Services: Fast.com
+fastdotcom:
+  scan_interval:
+    minutes: 90
