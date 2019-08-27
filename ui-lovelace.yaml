@@ -104,24 +104,30 @@ views:
         name: Bandwidth Usage
         icon: 'mdi:cloud-download'
       - entities:
-          - entity: sensor.nas_fan_rpm
-            icon: 'mdi:fan'
-          - entity: sensor.nas_temp_value
-            name: Overall Temp
-          - entity: sensor.nas_uptime
-            icon: 'mdi:av-timer'
-          - entity: sensor.nas_vol_1_free
-            icon: 'mdi:chart-donut'
-            name: Vol 1 Free Space
-          - entity: sensor.nas_vol_1_size
-            icon: 'mdi:harddisk'
-            name: Vol 1 Total Space
-          - entity: sensor.nas_vol_2_free
-            icon: 'mdi:chart-donut'
-            name: Vol 2 Free Space
-          - entity: sensor.nas_vol_2_size
-            icon: 'mdi:harddisk'
-            name: Vol 2 Total Space
+        - entity: sensor.hydroquebec_period_mean_daily_bill
+        - entity: sensor.hydroquebec_period_total_consumption
+        - entity: sensor.hydroquebec_yesterday_total_consumption
+        name: Power Consumption
+        type: entities
+      - entities:
+        - entity: sensor.nas_fan_rpm
+          icon: 'mdi:fan'
+        - entity: sensor.nas_temp_value
+          name: Overall Temp
+        - entity: sensor.nas_uptime
+          icon: 'mdi:av-timer'
+        - entity: sensor.nas_vol_1_free
+          icon: 'mdi:chart-donut'
+          name: Vol 1 Free Space
+        - entity: sensor.nas_vol_1_size
+          icon: 'mdi:harddisk'
+          name: Vol 1 Total Space
+        - entity: sensor.nas_vol_2_free
+          icon: 'mdi:chart-donut'
+          name: Vol 2 Free Space
+        - entity: sensor.nas_vol_2_size
+          icon: 'mdi:harddisk'
+          name: Vol 2 Total Space
         show_header_toggle: false
         title: Netgear ReadyNAS
         type: entities
