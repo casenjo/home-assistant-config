@@ -1,5 +1,0 @@
-living_room_lights:
-  name: Living Room Lights
-  entities:
-    - light.side_lamp
-    - light.dinner_lamp
