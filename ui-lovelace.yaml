@@ -59,6 +59,10 @@ views:
         type: media-control
       - entity: media_player.sony_bravia_tv
         type: media-control
+      - entities:
+          - light.corner_light
+        type: picture-glance
+        image: http://telepathic:8082/0/current.jpg
     icon: 'mdi:sofa'
     path: living_room
     title: Living Room
@@ -104,11 +108,13 @@ views:
         name: Bandwidth Usage
         icon: 'mdi:cloud-download'
       - entities:
-        - entity: sensor.hydroquebec_period_mean_daily_bill
-        - entity: sensor.hydroquebec_period_total_consumption
         - entity: sensor.hydroquebec_yesterday_total_consumption
         name: Power Consumption
-        type: entities
+        hours_to_show: 168
+        points_per_hour: 0.0417
+        type: custom:mini-graph-card
+        show:
+          graph: bar
       - entities:
         - entity: sensor.nas_fan_rpm
           icon: 'mdi:fan'
