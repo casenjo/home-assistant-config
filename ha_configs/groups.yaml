@@ -23,3 +23,10 @@ arrival:
     - light.table_light
     - light.window_light
   name: Arrival Lights
+
+# Bedroom lights group
+bedroom_lights:
+  entities:
+    - light.right_nightstand_light
+    - light.left_nightstand_light
+  name: Bedroom Lights
