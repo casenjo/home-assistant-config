@@ -1,0 +1,19 @@
+alias: Turn off bedroom lights
+initial_state: 'on'
+hide_entity: True
+trigger:
+  platform: state
+  entity_id: binary_sensor.smartthings_motionv4_0107bf61_1_1280
+  to: 'off'
+  for:
+    minutes: 3
+condition:
+  condition: and
+  conditions:
+    - condition: time
+      after: '18:30:00'
+    - condition: template
+      value_template: "{{ is_state('input_select.cristians_state', 'Awake') }}"
+action:
+  service: homeassistant.turn_off
+  entity_id: group.bedroom_lights
