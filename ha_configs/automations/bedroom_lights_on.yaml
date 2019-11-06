@@ -9,7 +9,7 @@ condition:
   condition: and
   conditions:
     - condition: time
-      after: '18:30:00'
+      after: '17:00:00'
     - condition: template
       value_template: "{{ is_state('input_select.cristians_state', 'Awake') }}"
 action:
