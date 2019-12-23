@@ -12,18 +12,19 @@ condition:
     value_template: "{{ is_state('input_select.living_room_lighting_state', 'Gaming') }}"
 action:
   - service: homeassistant.turn_on
-    entity_id: group.living_room_lights
-    brightness: 255
-    hs_color:
-      - 306.996
-      - 15.999
-    rgb_color:
-      - 255
-      - 214
-      - 250
-    xy_color:
-      - 0.343
-      - 0.289
+    data:
+      entity_id: group.living_room_lights
+      brightness: 255
+      hs_color:
+        - 306.996
+        - 15.999
+      rgb_color:
+        - 255
+        - 214
+        - 250
+      xy_color:
+        - 0.343
+        - 0.289
   - service: input_select.select_option
     data:
       entity_id: input_select.living_room_lighting_state

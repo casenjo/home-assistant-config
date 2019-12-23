@@ -12,18 +12,19 @@ condition:
     value_template: "{{ is_state('input_select.living_room_lighting_state', 'Normal') }}"
 action:
   - service: homeassistant.turn_on
-    entity_id: group.living_room_lights
-    brightness: 68
-    hs_color:
-      - 0
-      - 0.099
-    rgb_color:
-      - 255
-      - 254
-      - 254
-    xy_color:
-      - 0.324
-      - 0.329
+    data:
+      entity_id: group.living_room_lights
+      brightness: 68
+      hs_color:
+        - 0
+        - 0.099
+      rgb_color:
+        - 255
+        - 254
+        - 254
+      xy_color:
+        - 0.324
+        - 0.329
   - service: input_select.select_option
     data:
       entity_id: input_select.living_room_lighting_state
