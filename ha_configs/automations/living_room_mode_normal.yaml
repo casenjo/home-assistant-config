@@ -11,11 +11,8 @@ condition:
     condition: template
     value_template: "{{ is_state('input_select.living_room_lighting_state', 'Off') }}"
 action:
-  - service: homeassistant.turn_on
-    data:
-      entity_id: group.living_room_lights
-      brightness: 255
-      color_temp: 266
+  - service: scene.turn_on
+    entity_id: scene.living_room_lighting_mode_normal
   - service: input_select.select_option
     data:
       entity_id: input_select.living_room_lighting_state

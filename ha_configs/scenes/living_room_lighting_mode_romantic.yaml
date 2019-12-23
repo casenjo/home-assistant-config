@@ -1,0 +1,29 @@
+#
+# Living room lighting mode: Romantic
+#
+- name: Living room lighting mode romantic
+  entities:
+    light.ambient_light_counter:
+      state: on
+      brightness: 255
+      hs_color: [306.996, 15.999]
+      rgb_color: [255, 214, 250]
+      xy_color: [0.343, 0.289]
+    light.ambient_light_tv:
+      state: on
+      brightness: 255
+      hs_color: [306.996, 15.999]
+      rgb_color: [255, 214, 250]
+      xy_color: [0.343, 0.289]
+    light.corner_light:
+      state: on
+      brightness: 255
+      hs_color: [306.996, 15.999]
+      rgb_color: [255, 214, 250]
+      xy_color: [0.343, 0.289]
+    light.window_light:
+      state: on
+      brightness: 255
+      hs_color: [306.996, 15.999]
+      rgb_color: [255, 214, 250]
+      xy_color: [0.343, 0.289]
