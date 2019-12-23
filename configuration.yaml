@@ -173,3 +173,10 @@ input_select:
     options:
       - Awake
       - Asleep
+  living_room_lighting_state:
+    name: Living room is...
+    options:
+      - Off
+      - Normal
+      - Gaming
+      - Romantic

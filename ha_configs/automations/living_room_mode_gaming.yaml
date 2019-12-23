@@ -1,0 +1,30 @@
+alias: Living room mode gaming
+initial_state: 'on'
+hide_entity: True
+trigger:
+  event_data:
+    command: button_single
+    device_ieee: 28:6d:97:00:01:0d:34:5d
+  event_type: zha_event
+  platform: event
+condition:
+    condition: template
+    value_template: "{{ is_state('input_select.living_room_lighting_state', 'Normal') }}"
+action:
+  - service: homeassistant.turn_on
+    entity_id: group.living_room_lights
+    brightness: 68
+    hs_color:
+      - 0
+      - 0.099
+    rgb_color:
+      - 255
+      - 254
+      - 254
+    xy_color:
+      - 0.324
+      - 0.329
+  - service: input_select.select_option
+    data:
+      entity_id: input_select.living_room_lighting_state
+      option: Gaming
