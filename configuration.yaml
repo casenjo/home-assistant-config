@@ -176,7 +176,7 @@ input_select:
   living_room_lighting_state:
     name: Living room is...
     options:
-      - Off
+      - 'Off'
       - Normal
       - Gaming
       - Romantic
