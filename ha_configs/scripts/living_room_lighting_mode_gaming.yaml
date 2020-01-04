@@ -1,0 +1,29 @@
+#
+# Living room lighting mode: Gaming
+#
+living_room_lighting_mode_gaming:
+  sequence:
+    - service: light.turn_on
+      data:
+        entity_id: light.ambient_light_counter
+        brightness: 68
+        rgb_color: [255, 255, 255]
+        transition: 0.5
+    - service: light.turn_on
+      data:
+        entity_id: light.ambient_light_tv
+        brightness: 68
+        rgb_color: [255, 255, 255]
+        transition: 0.5
+    - service: light.turn_on
+      data:
+        entity_id: light.corner_light
+        brightness: 68
+        rgb_color: [255, 255, 255]
+        transition: 0.5
+    - service: light.turn_on
+      data:
+        entity_id: light.window_light
+        brightness: 68
+        rgb_color: [255, 255, 255]
+        transition: 0.5

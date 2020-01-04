@@ -1,0 +1,29 @@
+#
+# Living room lighting mode: Romantic
+#
+living_room_lighting_mode_romantic:
+  sequence:
+    - service: light.turn_on
+      data:
+        entity_id: light.ambient_light_counter
+        brightness: 235
+        rgb_color: [255, 140, 226]
+        transition: 0.5
+    - service: light.turn_on
+      data:
+        entity_id: light.ambient_light_tv
+        brightness: 235
+        rgb_color: [255, 140, 226]
+        transition: 0.5
+    - service: light.turn_on
+      data:
+        entity_id: light.corner_light
+        brightness: 255
+        rgb_color: [255, 140, 226]
+        transition: 0.5
+    - service: light.turn_on
+      data:
+        entity_id: light.window_light
+        brightness: 255
+        rgb_color: [255, 61, 111]
+        transition: 0.5

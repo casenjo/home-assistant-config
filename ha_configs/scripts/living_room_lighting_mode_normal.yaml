@@ -1,0 +1,29 @@
+#
+# Living room lighting mode: Normal
+#
+living_room_lighting_mode_normal:
+  sequence:
+    - service: light.turn_on
+      data:
+        entity_id: light.ambient_light_counter
+        brightness: 255
+        color_temp: 266
+        transition: 0.5
+    - service: light.turn_on
+      data:
+        entity_id: light.ambient_light_tv
+        brightness: 255
+        color_temp: 266
+        transition: 0.5
+    - service: light.turn_on
+      data:
+        entity_id: light.corner_light
+        brightness: 255
+        color_temp: 266
+        transition: 0.5
+    - service: light.turn_on
+      data:
+        entity_id: light.window_light
+        brightness: 255
+        color_temp: 266
+        transition: 0.5
