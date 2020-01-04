@@ -4,7 +4,7 @@ hide_entity: True
 trigger:
   event_data:
     command: button_single
-    device_ieee: 28:6d:97:00:01:05:55:1c 
+    device_ieee: 28:6d:97:00:01:05:55:1c
   event_type: zha_event
   platform: event
 condition:
@@ -17,3 +17,7 @@ action:
     data:
       entity_id: input_select.cristians_state
       option: Asleep
+  - service: input_select.select_option
+    data:
+      entity_id: input_select.living_room_lighting_state
+      option: 'Off'
