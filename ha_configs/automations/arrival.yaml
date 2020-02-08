@@ -9,7 +9,7 @@ condition:
   condition: and
   conditions:
     - condition: time
-      after: '18:45:00'
+      after: '17:30:00'
     - condition: state
       entity_id: 'device_tracker.cristian'
       state: 'not_home'
