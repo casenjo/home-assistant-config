@@ -1,6 +1,5 @@
 alias: Living room mode normal
 initial_state: 'on'
-hide_entity: True
 trigger:
   event_data:
     command: button_single

@@ -1,6 +1,5 @@
 alias: Toggle sleep mode asleep
 initial_state: 'on'
-hide_entity: True
 trigger:
   event_data:
     command: button_single

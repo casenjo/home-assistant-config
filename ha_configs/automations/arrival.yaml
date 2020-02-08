@@ -1,6 +1,5 @@
 alias: Turn on lights when arriving home
 initial_state: 'on'
-hide_entity: True
 trigger:
   platform: state
   entity_id: binary_sensor.smartthings_motionv4_0102c904_1_1280

@@ -1,6 +1,5 @@
 alias: Turn on bedroom lights
 initial_state: 'on'
-hide_entity: True
 trigger:
   platform: state
   entity_id: binary_sensor.smartthings_motionv4_0107bf61_1_1280

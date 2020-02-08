@@ -1,10 +1,9 @@
 alias: Toggle sleep mode awake
 initial_state: 'on'
-hide_entity: True
 trigger:
   event_data:
     command: button_single
-    device_ieee: 28:6d:97:00:01:05:55:1c 
+    device_ieee: 28:6d:97:00:01:05:55:1c
   event_type: zha_event
   platform: event
 condition:

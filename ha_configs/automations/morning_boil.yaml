@@ -1,6 +1,5 @@
 alias: Turn on kettle in the morning
 initial_state: 'on'
-hide_entity: True
 trigger:
   platform: time
   at: '05:55:00'

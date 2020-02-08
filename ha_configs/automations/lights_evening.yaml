@@ -1,6 +1,5 @@
 alias: Turn on the lights in the evening
 initial_state: 'on'
-hide_entity: True
 trigger:
   platform: time
   at: '17:00:00'
