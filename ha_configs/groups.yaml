@@ -1,6 +1,5 @@
 bedroom_scenes:
   name: Scenes
-  control: hidden
   entities:
     - scene.all_lights_off
 
