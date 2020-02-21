@@ -15,6 +15,7 @@ views:
           - entities:
               - entity: light.ambient_light_counter
               - entity: light.ambient_light_tv
+              - entity: light.ambient_light_wall
               - entity: light.corner_light
               - entity: light.window_light
               - entity: light.table_light
@@ -64,6 +65,7 @@ views:
       - entities:
           - light.ambient_light_counter
           - light.ambient_light_tv
+          - light.ambient_light_wall
           - light.corner_light
           - light.window_light
         show_header_toggle: true
