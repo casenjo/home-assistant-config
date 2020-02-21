@@ -1,0 +1,9 @@
+alias: Turn off lights when leaving home
+initial_state: 'on'
+trigger:
+  platform: state
+  entity_id: device_tracker.cristian
+  to: 'away'
+action:
+  service: homeassistant.turn_off
+  entity_id: group.departure

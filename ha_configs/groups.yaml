@@ -21,7 +21,21 @@ arrival:
     - light.corner_light
     - light.table_light
     - light.window_light
-  name: Arrival Lights
+  name: Arrival
+
+# Departure automation lights group
+departure:
+  entities:
+    - light.ambient_light_counter
+    - light.ambient_light_tv
+    - light.corner_light
+    - light.table_light
+    - light.window_light
+    - light.right_nightstand_light
+    - light.left_nightstand_light
+    - light.bathroom_light
+    - light.office_light
+  name: Departure
 
 # Bedroom lights group
 bedroom_lights:
