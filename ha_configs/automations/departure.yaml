@@ -4,6 +4,8 @@ trigger:
   platform: state
   entity_id: device_tracker.cristian
   to: 'away'
+  for:
+    minutes: 5
 action:
   service: homeassistant.turn_off
   entity_id: group.departure
