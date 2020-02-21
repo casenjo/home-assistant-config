@@ -31,6 +31,20 @@ views:
     icon: 'mdi:home'
     path: default_view
     title: default_view
+  # Kitchen view
+  - badges: []
+    cards:
+      - entity: light.centralite_4257050rzhac_04ae3ef2_1
+        name: Kettle
+        type: entity-button
+        icon: 'mdi:power-plug'
+      - entity: switch.osram_plug_01_00a26de0_3
+        name: Nespresso
+        type: entity-button
+        icon: 'mdi:power-plug'
+    icon: 'mdi:fridge'
+    path: kitchen
+    title: Kitchen
   # Bedroom view
   - badges: []
     cards:
@@ -140,4 +154,3 @@ views:
     icon: 'mdi:settings'
     path: system
     title: System
-
