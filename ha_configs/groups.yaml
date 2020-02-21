@@ -9,6 +9,7 @@ living_room_lights:
   entities:
     - light.ambient_light_counter
     - light.ambient_light_tv
+    - light.ambient_light_wall
     - light.corner_light
     - light.window_light
 
@@ -18,6 +19,7 @@ arrival:
   entities:
     - light.ambient_light_counter
     - light.ambient_light_tv
+    - light.ambient_light_wall
     - light.corner_light
     - light.table_light
     - light.window_light
@@ -28,6 +30,7 @@ departure:
   entities:
     - light.ambient_light_counter
     - light.ambient_light_tv
+    - light.ambient_light_wall
     - light.corner_light
     - light.table_light
     - light.window_light

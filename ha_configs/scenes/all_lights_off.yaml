@@ -5,6 +5,7 @@
   entities:
     light.ambient_light_counter: off
     light.ambient_light_tv: off
+    light.ambient_light_wall: off
     light.bathroom_light: off
     light.corner_light: off
     light.left_nightstand_light: off

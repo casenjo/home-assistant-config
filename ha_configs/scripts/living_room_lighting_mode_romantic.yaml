@@ -25,5 +25,11 @@ living_room_lighting_mode_romantic:
       data:
         entity_id: light.window_light
         brightness: 255
-        rgb_color: [255, 61, 111]
+        rgb_color: [255, 61, 192]
+        transition: 0.5
+    - service: light.turn_on
+      data:
+        entity_id: light.ambient_light_wall
+        brightness: 255
+        rgb_color: [255, 61, 192]
         transition: 0.5

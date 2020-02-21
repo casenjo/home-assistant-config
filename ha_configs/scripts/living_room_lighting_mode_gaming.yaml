@@ -27,3 +27,9 @@ living_room_lighting_mode_gaming:
         brightness: 68
         rgb_color: [255, 255, 255]
         transition: 0.5
+    - service: light.turn_on
+      data:
+        entity_id: light.ambient_light_wall
+        brightness: 68
+        rgb_color: [255, 255, 255]
+        transition: 0.5
