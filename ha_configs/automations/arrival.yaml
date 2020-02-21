@@ -9,10 +9,16 @@ condition:
   conditions:
     - condition: time
       after: '17:30:00'
-    - condition: state
-      entity_id: 'device_tracker.cristian'
-      state: 'not_home'
+    - condition: or
+      conditions:
+        - condition: state
+          entity_id: 'device_tracker.cristian'
+          state: 'home'
+          for:
+            minutes: 2
+        - condition: state
+          entity_id: 'device_tracker.cristian'
+          state: 'away'
 action:
   service: homeassistant.turn_on
   entity_id: group.arrival
-
