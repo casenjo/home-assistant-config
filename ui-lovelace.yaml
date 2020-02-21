@@ -64,11 +64,12 @@ views:
   - badges: []
     cards:
       - entities:
-          - light.ambient_light_counter
-          - light.ambient_light_tv
-          - light.ambient_light_wall
-          - light.corner_light
-          - light.window_light
+          - entity: light.ambient_light_counter
+          - entity: light.ambient_light_tv
+          - entity: light.ambient_light_wall
+            name: Ambient Light (Wall)
+          - entity: light.corner_light
+          - entity: light.window_light
         show_header_toggle: true
         title: Lights
         type: entities
