@@ -16,6 +16,7 @@ views:
               - entity: light.ambient_light_counter
               - entity: light.ambient_light_tv
               - entity: light.ambient_light_wall
+                name: Ambient Light (Wall)
               - entity: light.corner_light
               - entity: light.window_light
               - entity: light.table_light
