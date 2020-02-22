@@ -31,5 +31,5 @@ living_room_lighting_mode_normal:
       data:
         entity_id: light.ambient_light_wall
         brightness: 255
-        color_temp: 266
+        color_temp: 302
         transition: 0.5

@@ -31,5 +31,5 @@ living_room_lighting_mode_gaming:
       data:
         entity_id: light.ambient_light_wall
         brightness: 68
-        rgb_color: [255, 255, 255]
+        color_temp: 325
         transition: 0.5
