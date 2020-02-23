@@ -1,0 +1,5 @@
+living_room_lighting_mode_off:
+  sequence:
+    - service: homeassistant.turn_off
+      data:
+        entity_id: group.living_room_lights

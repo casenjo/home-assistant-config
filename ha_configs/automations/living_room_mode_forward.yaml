@@ -1,0 +1,27 @@
+# Moves the state of the living room to the next one in the list
+alias: Living Room Mode - Next
+initial_state: 'on'
+trigger:
+  event_data:
+    command: button_single
+    device_ieee: !button_mac
+  event_type: zha_event
+  platform: event
+action:
+  - service: input_select.select_next
+    data:
+      entity_id: input_select.living_room_lighting_state
+  - service: script.turn_on
+    data_template:
+      entity_id: >
+          {% if is_state("input_select.living_room_lighting_state", "Normal") %}
+            script.living_room_lighting_mode_normal
+          {%-elif is_state("input_select.living_room_lighting_state", "Gaming") %}
+            script.living_room_lighting_mode_gaming
+          {%-elif is_state("input_select.living_room_lighting_state", "Romantic") %}
+            script.living_room_lighting_mode_romantic
+          {%-elif is_state("input_select.living_room_lighting_state", "'Off'") %}
+            script.living_room_lighting_mode_off
+          {% else %}
+            none
+          {% endif %}
