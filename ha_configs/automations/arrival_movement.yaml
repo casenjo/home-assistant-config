@@ -1,0 +1,17 @@
+alias: Turn on lights when arriving home (movement)
+initial_state: 'on'
+trigger:
+  platform: state
+  entity_id: binary_sensor.smartthings_motionv4_0102c904_1_1280
+  to: 'on'
+condition:
+  condition: and
+  conditions:
+    - condition: time
+      after: '17:30:00'
+    - condition: state
+      entity_id: 'device_tracker.cristian'
+      state: 'away'
+action:
+  service: homeassistant.turn_on
+  entity_id: group.arrival
