@@ -1,6 +1,3 @@
-#
-# Living room lighting mode: Romantic
-#
 living_room_lighting_mode_romantic:
   sequence:
     - service: light.turn_on

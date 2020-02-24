@@ -1,6 +1,3 @@
-#
-# Living room lighting mode: Normal
-#
 living_room_lighting_mode_normal:
   sequence:
     - service: light.turn_on
