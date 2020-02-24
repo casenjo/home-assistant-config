@@ -4,7 +4,7 @@ initial_state: 'on'
 trigger:
   event_data:
     command: button_double
-    device_ieee: !button_mac
+    device_ieee: !button_living_room_mac
   event_type: zha_event
   platform: event
 action:
