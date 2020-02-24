@@ -20,7 +20,7 @@ action:
             script.living_room_lighting_mode_gaming
           {%-elif is_state("input_select.living_room_lighting_state", "Romantic") %}
             script.living_room_lighting_mode_romantic
-          {%-elif is_state("input_select.living_room_lighting_state", "'Off'") %}
+          {%-elif is_state("input_select.living_room_lighting_state", "Off") %}
             script.living_room_lighting_mode_off
           {% else %}
             none
