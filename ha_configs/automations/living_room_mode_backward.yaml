@@ -22,4 +22,6 @@ action:
             script.living_room_lighting_mode_romantic
           {%-elif is_state("input_select.living_room_lighting_state", "'Off'") %}
             script.living_room_lighting_mode_off
+          {% else %}
+            none
           {% endif %}
