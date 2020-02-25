@@ -3,7 +3,7 @@ initial_state: 'on'
 trigger:
   event_data:
     command: button_single
-    device_ieee: 28:6d:97:00:01:05:55:1c
+    device_ieee: !secret button_bedroom_mac
   event_type: zha_event
   platform: event
 condition:
