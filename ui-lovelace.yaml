@@ -64,6 +64,24 @@ views:
   - badges: []
     cards:
       - entities:
+          - entity: group.living_room_lights
+            type: 'custom:rgb-light-card'
+            justify: center
+            colors:
+                - color_temp: 172 # 5800K Daylight
+                  brightness: 255
+                  transition: 0.5
+                - color_temp: 266 # 3750K Cool
+                  brightness: 255
+                  transition: 0.5
+                - color_temp: 318 # 3100K Warm
+                  brightness: 255
+                  transition: 0.5
+                - color_temp: 400 # 2500K Ultra Warm
+                  brightness: 255
+                  transition: 0.5
+        type: entities
+      - entities:
           - entity: light.ambient_light_counter
           - entity: light.ambient_light_tv
           - entity: light.ambient_light_wall
