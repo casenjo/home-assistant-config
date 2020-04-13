@@ -181,3 +181,9 @@ input_select:
       - Normal
       - Gaming
       - Romantic
+
+input_datetime:
+  only_time:
+    name: Lighting On Time
+    has_date: false
+    has_time: true
