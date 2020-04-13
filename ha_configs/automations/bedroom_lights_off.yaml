@@ -9,8 +9,8 @@ trigger:
 condition:
   condition: and
   conditions:
-    - condition: time
-      after: '17:00:00'
+    - condition: template
+      value_template: '{{ now().time().strftime("%T") > states("input_datetime.lighting_on_time") }}'
     - condition: template
       value_template: "{{ is_state('input_select.cristians_state', 'Awake') }}"
 action:

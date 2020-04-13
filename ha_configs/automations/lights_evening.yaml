@@ -1,8 +1,8 @@
 alias: Turn on the lights in the evening
 initial_state: 'on'
 trigger:
-  platform: time
-  at: '17:00:00'
+  platform: template
+  value_template: '{{ now().time().strftime("%T") > states("input_datetime.lighting_on_time") }}'
 condition:
     condition: state
     entity_id: 'device_tracker.cristian'
