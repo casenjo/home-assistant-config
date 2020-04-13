@@ -181,3 +181,10 @@ input_select:
       - Normal
       - Gaming
       - Romantic
+
+input_datetime:
+  lighting_on_time:
+    name: Lighting On Time
+    has_date: false
+    has_time: true
+    initial: '17:00:00'

@@ -5,9 +5,12 @@ trigger:
   entity_id: binary_sensor.smartthings_motionv5_010acf87_1_1280
   to: 'on'
 condition:
-  condition: time
-  after: '18:45:00'
-  before: '23:00:00'
+  condition: and
+  conditions:
+    - condition: template
+      value_template: '{{ now().time().strftime("%T") > states("input_datetime.lighting_on_time") }}'
+    - condition: time
+      before: '23:00:00'
 action:
   service: homeassistant.turn_on
   entity_id: light.office_light

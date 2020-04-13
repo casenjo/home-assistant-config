@@ -7,8 +7,8 @@ trigger:
   for:
     minutes: 5
 condition:
-  condition: time
-  after: '17:00:00'
+  condition: template
+  value_template: '{{ now().time().strftime("%T") > states("input_datetime.lighting_on_time") }}'
 action:
   service: homeassistant.turn_off
   entity_id: light.office_light
