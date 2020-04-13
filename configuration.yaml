@@ -183,7 +183,8 @@ input_select:
       - Romantic
 
 input_datetime:
-  only_time:
+  lighting_on_time:
     name: Lighting On Time
     has_date: false
     has_time: true
+    initial: '17:00:00'
