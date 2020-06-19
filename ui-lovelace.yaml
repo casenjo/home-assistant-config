@@ -175,6 +175,25 @@ views:
         show_header_toggle: false
         title: Netgear ReadyNAS
         type: entities
+      - entities:
+        - entity: sensor.smartthings_motionv4_0102c904_1_1
+          icon: 'mdi:motion-sensor'
+          name: Hallway Motion Sensor
+        - entity: sensor.smartthings_motionv5_010acf87_1_1 
+          icon: 'mdi:motion-sensor'
+          name: Office Motion Sensor
+        - entity: sensor.smartthings_motionv4_0107bf61_1_1 
+          icon: 'mdi:motion-sensor'
+          name: Bedroom Motion Sensor
+        - entity: sensor.living_room_button_5d340d01_power 
+          icon: 'mdi:toggle-switch'
+          name: Living Room Button
+        - entity: sensor.samjin_button_0105551c_1_1 
+          icon: 'mdi:toggle-switch'
+          name: Bedroom Button
+        show_header_toggle: false
+        title: Battery Levels
+        type: entities
     icon: 'mdi:settings'
     path: system
     title: System
