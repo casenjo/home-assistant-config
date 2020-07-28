@@ -59,7 +59,7 @@ views:
         name: Left Nightstand
         theme: default
         type: light
-    icon: 'mdi:hotel'
+    icon: 'mdi:bed'
     path: bedroom
     title: Bedroom
   # Living Room View
@@ -194,6 +194,6 @@ views:
         show_header_toggle: false
         title: Battery Levels
         type: entities
-    icon: 'mdi:settings'
+    icon: 'mdi:cog'
     path: system
     title: System
