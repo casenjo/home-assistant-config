@@ -102,7 +102,7 @@ device_tracker:
       track_new_devices: False
     consider_home: 15
     hosts:
-      - 192.168.1.151
+      - 192.168.1.166
 
 scene: !include_dir_merge_list ha_configs/scenes
 group: !include ha_configs/groups.yaml
