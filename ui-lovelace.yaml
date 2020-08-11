@@ -1,11 +1,5 @@
 title: Home
 
-resources:
-  - url: /local/mini-graph-card-bundle.js?v=0.6.0
-    type: module
-  - url: /local/rgb-light-card.js
-    type: module
-
 views:
   # Home view
   - badges:

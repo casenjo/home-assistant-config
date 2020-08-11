@@ -23,6 +23,11 @@ frontend:
 # Enables lovelace from YAML
 lovelace:
   mode: yaml
+  resources:
+    - url: /local/mini-graph-card-bundle.js?v=0.6.0
+      type: module
+    - url: /local/rgb-light-card.js
+      type: module
 
 # Enables configuration UI
 config:
