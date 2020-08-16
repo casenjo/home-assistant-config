@@ -96,8 +96,6 @@ tts:
 
 media_player: !include ha_configs/media_players.yaml
 
-light: !include ha_configs/lights.yaml
-
 pi_hole:
   host: !secret pihole_host
   ssl: true
@@ -126,7 +124,6 @@ zwave:
 
 # Enable zigbee devices
 zha:
-  usb_path: /dev/ttyUSB1
   database_path: /config/zigbee.db
 
 homekit:

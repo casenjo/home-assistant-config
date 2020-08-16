@@ -1,9 +1,0 @@
-- platform: lifx
-  broadcast: 192.168.1.255
-
-- platform: zwave
-  scan_interval: 2
-
-- platform: zha
-  entity_id: light.osram_lightify_a19_onoffdim_10_year_00a65e64_3
-  friendly_name: Table Light
