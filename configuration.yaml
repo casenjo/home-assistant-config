@@ -97,9 +97,9 @@ tts:
 media_player: !include ha_configs/media_players.yaml
 
 pi_hole:
-  host: !secret pihole_host
-  ssl: true
-  verify_ssl: false
+  - host: !secret pihole_host
+    ssl: true
+    verify_ssl: false
 
 device_tracker:
   - platform: nmap_tracker
