@@ -2,5 +2,10 @@
   host: !secret tv_host
 
 - platform: onkyo
-  host: 192.168.1.143
+  host: !secret pioneer_host
   name: Pioneer AVR
+
+- platform: kodi
+  host: !secret kodi_host
+  username: !secret kodi_user
+  password: !secret kodi_password
