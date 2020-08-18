@@ -1,8 +1,16 @@
-alias: Turn on kettle in the morning
+alias: Boil water on weekday mornings
 initial_state: 'on'
 trigger:
   platform: time
-  at: '05:55:00'
+  at: '07:10:00'
+condition:
+  condition: time
+  weekday:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
 action:
   service: light.turn_on
   entity_id: light.centralite_4257050rzhac_04ae3ef2_1
