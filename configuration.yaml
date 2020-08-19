@@ -77,6 +77,14 @@ recorder:
       - sensor.dark_sky_pressure
       - sensor.dark_sky_visibility
       - sensor.dark_sky_ozone
+      - sensor.nas_fan_rpm
+      - sensor.nas_host_name
+      - sensor.nas_temp_value
+      - sensor.nas_uptime
+      - sensor.nas_vol_1_free
+      - sensor.nas_vol_1_size
+      - sensor.nas_vol_2_free
+      - sensor.nas_vol_2_size
 
 # View all events in a logbook
 logbook:
