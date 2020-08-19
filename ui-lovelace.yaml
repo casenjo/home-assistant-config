@@ -35,11 +35,11 @@ views:
       - entity: light.centralite_4257050rzhac_04ae3ef2_1
         name: Kettle
         type: entity-button
-        icon: 'mdi:power-plug'
+        icon: 'mdi:kettle'
       - entity: switch.osram_plug_01_00a26de0_3
-        name: Nespresso
+        name: Coffee Grinder
         type: entity-button
-        icon: 'mdi:power-plug'
+        icon: 'mdi:coffee-maker'
     icon: 'mdi:fridge'
     path: kitchen
     title: Kitchen
@@ -90,6 +90,8 @@ views:
       - entity: media_player.pioneer_avr
         type: media-control
       - entity: media_player.sony_bravia_tv
+        type: media-control
+      - entity: media_player.kodi
         type: media-control
       - entities:
           - light.corner_light
@@ -173,16 +175,16 @@ views:
         - entity: sensor.smartthings_motionv4_0102c904_1_1
           icon: 'mdi:motion-sensor'
           name: Hallway Motion Sensor
-        - entity: sensor.smartthings_motionv5_010acf87_1_1 
+        - entity: sensor.smartthings_motionv5_010acf87_1_1
           icon: 'mdi:motion-sensor'
           name: Office Motion Sensor
-        - entity: sensor.smartthings_motionv4_0107bf61_1_1 
+        - entity: sensor.smartthings_motionv4_0107bf61_1_1
           icon: 'mdi:motion-sensor'
           name: Bedroom Motion Sensor
-        - entity: sensor.living_room_button_5d340d01_power 
+        - entity: sensor.living_room_button_5d340d01_power
           icon: 'mdi:toggle-switch'
           name: Living Room Button
-        - entity: sensor.samjin_button_0105551c_1_1 
+        - entity: sensor.samjin_button_0105551c_1_1
           icon: 'mdi:toggle-switch'
           name: Bedroom Button
         show_header_toggle: false

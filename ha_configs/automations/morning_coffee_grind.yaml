@@ -1,8 +1,8 @@
-alias: Boil water on weekday mornings
+alias: Grind coffee on weekday mornings
 initial_state: 'on'
 trigger:
   platform: time
-  at: '07:10:00'
+  at: '07:20:00'
 condition:
   condition: time
   weekday:
@@ -12,5 +12,6 @@ condition:
     - thu
     - fri
 action:
-  service: light.turn_on
-  entity_id: light.centralite_4257050rzhac_04ae3ef2_1
+  service: script.grind_coffee
+  data:
+    duration: 20
