@@ -1,16 +1,12 @@
 grind_coffee:
   alias: Grind Coffee
   description: "Grinds coffee for X seconds"
-  fields:
-    seconds:
-      description: "The number of seconds to grind coffee for before turning off the grinder"
-      example: 1
   sequence:
     - service: switch.turn_on
       data:
         entity_id: switch.osram_plug_01_00a26de0_3
     - delay:
-        seconds: "{{ seconds | int }}"
+        seconds: 15
     - service: switch.turn_off
       data:
         entity_id: switch.osram_plug_01_00a26de0_3
