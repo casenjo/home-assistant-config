@@ -14,4 +14,4 @@ condition:
 action:
   service: script.grind_coffee
   data:
-    duration: 15
+    seconds: 15
