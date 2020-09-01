@@ -2,7 +2,7 @@ alias: Grind coffee on weekday mornings
 initial_state: 'on'
 trigger:
   platform: time
-  at: '07:20:00'
+  at: '07:15:00'
 condition:
   condition: time
   weekday:
