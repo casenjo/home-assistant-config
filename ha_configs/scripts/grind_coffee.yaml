@@ -1,12 +1,12 @@
 grind_coffee:
   alias: Grind Coffee
-  description: "Grinds coffee for X seconds"
+  description: "Grinds coffee for 20 seconds"
   sequence:
     - service: switch.turn_on
       data:
         entity_id: switch.osram_plug_01_00a26de0_3
     - delay:
-        seconds: 15
+        seconds: 20
     - service: switch.turn_off
       data:
         entity_id: switch.osram_plug_01_00a26de0_3
