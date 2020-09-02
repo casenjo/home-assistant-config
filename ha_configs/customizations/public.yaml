@@ -1,6 +1,7 @@
 binary_sensor.smartthings_motionv4_0102c904_1_1280:
   hidden: true
-binary_sensor.smartthings_motionv5_010acf87_1_1280:
+binary_sensor.office_motion:
+  friendly_name: 'Office Motion Sensor'
   hidden: true
 configurator.plex_media_server:
   hidden: true
