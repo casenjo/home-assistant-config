@@ -181,10 +181,10 @@ views:
         - entity: sensor.motion_bedroom_battery
           icon: 'mdi:motion-sensor'
           name: Bedroom Motion Sensor
-        - entity: sensor.living_room_button_5d340d01_power
+        - entity: sensor.button_living_room_battery
           icon: 'mdi:toggle-switch'
           name: Living Room Button
-        - entity: sensor.samjin_button_0105551c_1_1
+        - entity: sensor.button_bedroom_battery
           icon: 'mdi:toggle-switch'
           name: Bedroom Button
         show_header_toggle: false
