@@ -2,7 +2,7 @@ alias: Turn on bedroom lights
 initial_state: 'on'
 trigger:
   platform: state
-  entity_id: binary_sensor.motion_entrance
+  entity_id: binary_sensor.motion_hallway
   to: 'on'
 condition:
   condition: and

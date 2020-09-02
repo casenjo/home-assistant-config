@@ -26,7 +26,7 @@
     hall_temperature:
       friendly_name: "Hall Temp"
       unit_of_measurement: '°C'
-      value_template: "{{ ((((((states('sensor.smartthings_motionv4_0102c904_1_1026')|float) + (states('sensor.smartthings_motionv5_010acf87_1_1026')|float))/2)|float)| round(0))|int) }}"
+      value_template: "{{ ((((((states('sensor.motion_hallway_temp')|float) + (states('sensor.motion_office_temp')|float))/2)|float)| round(0))|int) }}"
 
 - platform: teksavvy
   api_key: !secret teksavvy_api_key
@@ -89,7 +89,7 @@
   baseoid: 1.3.6.1.4.1.4526.22.5.1.2.1
   unit_of_measurement: '°C'
   name: 'NAS Temp Value'
-    
+
 - platform: snmp
   host: !secret nas
   community: !secret snmp_community
