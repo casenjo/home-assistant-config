@@ -40,7 +40,8 @@ sensor.entrance_motion_sensor:
 sensor.motion_hallway_temp:
   friendly_name: 'Hallway Motion Sensor Temp'
   hidden: true
-sensor.smartthings_motionv5_010acf87_1_1026:
+sensor.motion_office_temp:
+  friendly_name: 'Office Motion Sensor Temp'
   hidden: true
 zha.zha_centralite_4257050rzhac_04ae3ef2:
   hidden: true

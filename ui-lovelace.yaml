@@ -175,7 +175,7 @@ views:
         - entity: sensor.motion_hallway_battery
           icon: 'mdi:motion-sensor'
           name: Hallway Motion Sensor
-        - entity: sensor.smartthings_motionv5_010acf87_1_1
+        - entity: sensor.motion_office_battery
           icon: 'mdi:motion-sensor'
           name: Office Motion Sensor
         - entity: sensor.motion_bedroom_battery
