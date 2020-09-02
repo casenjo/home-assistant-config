@@ -1,4 +1,4 @@
-binary_sensor.motion_entrance:
+binary_sensor.motion_hallway:
   friendly_name: 'Entrance Motion Sensor'
   hidden: true
 binary_sensor.motion_office:
@@ -37,7 +37,8 @@ sensor.centralite_4257050rzhac_04ae3ef2_1_2820:
   hidden: true
 sensor.entrance_motion_sensor:
   hidden: true
-sensor.smartthings_motionv4_0102c904_1_1026:
+sensor.motion_hallway_temp:
+  friendly_name: 'Hallway Motion Sensor Temp'
   hidden: true
 sensor.smartthings_motionv5_010acf87_1_1026:
   hidden: true

@@ -172,7 +172,7 @@ views:
         title: Netgear ReadyNAS
         type: entities
       - entities:
-        - entity: sensor.smartthings_motionv4_0102c904_1_1
+        - entity: sensor.motion_hallway_battery
           icon: 'mdi:motion-sensor'
           name: Hallway Motion Sensor
         - entity: sensor.smartthings_motionv5_010acf87_1_1
