@@ -178,7 +178,7 @@ views:
         - entity: sensor.smartthings_motionv5_010acf87_1_1
           icon: 'mdi:motion-sensor'
           name: Office Motion Sensor
-        - entity: sensor.smartthings_motionv4_0107bf61_1_1
+        - entity: sensor.motion_bedroom_battery
           icon: 'mdi:motion-sensor'
           name: Bedroom Motion Sensor
         - entity: sensor.living_room_button_5d340d01_power
