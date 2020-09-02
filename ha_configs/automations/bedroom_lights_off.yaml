@@ -2,7 +2,7 @@ alias: Turn off bedroom lights
 initial_state: 'on'
 trigger:
   platform: state
-  entity_id: binary_sensor.smartthings_motionv4_0107bf61_1_1280
+  entity_id: binary_sensor.motion_bedroom
   to: 'off'
   for:
     minutes: 3

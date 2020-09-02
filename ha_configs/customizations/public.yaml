@@ -1,7 +1,11 @@
-binary_sensor.smartthings_motionv4_0102c904_1_1280:
+binary_sensor.motion_entrance:
+  friendly_name: 'Entrance Motion Sensor'
   hidden: true
-binary_sensor.office_motion:
+binary_sensor.motion_office:
   friendly_name: 'Office Motion Sensor'
+  hidden: true
+binary_sensor.motion_bedroom:
+  friendly_name: 'Bedroom Motion Sensor'
   hidden: true
 configurator.plex_media_server:
   hidden: true
