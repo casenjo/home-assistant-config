@@ -7,6 +7,12 @@ binary_sensor.motion_office:
 binary_sensor.motion_bedroom:
   friendly_name: 'Bedroom Motion Sensor'
   hidden: true
+binary_sensor.button_bedroom:
+  friendly_name: 'Bedroom Button'
+  hidden: true
+binary_sensor.button_living_room:
+  friendly_name: 'Living Room Button'
+  hidden: true
 configurator.plex_media_server:
   hidden: true
 group.arrival:
@@ -42,6 +48,12 @@ sensor.motion_hallway_temp:
   hidden: true
 sensor.motion_office_temp:
   friendly_name: 'Office Motion Sensor Temp'
+  hidden: true
+sensor.button_bedroom_temp:
+  friendly_name: 'Bedroom Button Temp'
+  hidden: true
+sensor.button_living_room_temp:
+  friendly_name: 'Living Room Button Temp'
   hidden: true
 zha.zha_centralite_4257050rzhac_04ae3ef2:
   hidden: true

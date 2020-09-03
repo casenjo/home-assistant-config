@@ -53,6 +53,9 @@ views:
         name: Left Nightstand
         theme: default
         type: light
+      - entity: sensor.bedroom_temperature
+        type: sensor
+        graph: none
     icon: 'mdi:bed'
     path: bedroom
     title: Bedroom
