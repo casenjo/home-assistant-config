@@ -4,8 +4,3 @@
 - platform: onkyo
   host: !secret pioneer_host
   name: Pioneer AVR
-
-- platform: kodi
-  host: !secret kodi_host
-  username: !secret kodi_user
-  password: !secret kodi_password
