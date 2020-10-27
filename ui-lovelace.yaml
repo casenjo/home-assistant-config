@@ -134,17 +134,6 @@ views:
           type: custom:mini-graph-card
         type: vertical-stack
       - entities:
-        - entity: sensor.teksavvy_on_peak_download
-          name: Download
-        - entity: sensor.teksavvy_on_peak_upload
-          name: Upload
-        type: custom:mini-graph-card
-        hours_to_show: 720
-        points_per_hour: 0.05
-        update_interval: 5
-        name: Bandwidth Usage
-        icon: 'mdi:cloud-download'
-      - entities:
         - entity: sensor.hydroquebec_yesterday_total_consumption
         name: Power Consumption
         hours_to_show: 168
