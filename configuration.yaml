@@ -135,7 +135,7 @@ zha:
   database_path: /config/zigbee.db
 
 homekit:
-  auto_start: False
+  auto_start: false
   filter:
     include_domains:
       - light
