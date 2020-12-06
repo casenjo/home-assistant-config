@@ -80,6 +80,35 @@ views:
                   brightness: 255
                   transition: 0.5
         type: entities
+      - cards:
+        - entities:
+          - entity:
+          type: button
+          tap_action:
+            action: call-service
+            service: script.turn_on
+            service_data:
+              entity_id:  script.living_room_lighting_mode_normal
+          icon: 'mdi:brightness-7'
+        - entities:
+          - entity:
+          type: button
+          tap_action:
+            action: call-service
+            service: script.turn_on
+            service_data:
+              entity_id:  script.living_room_lighting_mode_romantic
+          icon: 'mdi:heart'
+        - entities:
+          - entity:
+          type: button
+          tap_action:
+            action: call-service
+            service: script.turn_on
+            service_data:
+              entity_id:  script.living_room_lighting_mode_gaming
+          icon: 'mdi:movie'
+        type: horizontal-stack
       - entities:
           - entity: light.ambient_light_counter
           - entity: light.ambient_light_tv
