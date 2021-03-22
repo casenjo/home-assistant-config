@@ -204,4 +204,4 @@ input_datetime:
     name: Lighting On Time
     has_date: false
     has_time: true
-    initial: '17:00:00'
+    initial: '19:00:00'
