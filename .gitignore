@@ -23,6 +23,7 @@ snapshot
 OZW_Log.txt
 options.xml
 pyozw.sqlite
+webostv.conf
 zigbee.db
 zwcfg_*.xml
 zwscene.xml

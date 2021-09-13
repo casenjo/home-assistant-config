@@ -205,3 +205,14 @@ input_datetime:
     has_date: false
     has_time: true
     initial: '19:00:00'
+
+wake_on_lan:
+
+webostv:
+  host: !secret tv_host
+  name: Living Room TV
+  turn_on_action:
+    service: wake_on_lan.send_magic_packet
+    data:
+      mac: !secret tv_mac
+      broadcast_address: !secret tv_host

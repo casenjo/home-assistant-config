@@ -121,7 +121,7 @@ views:
         type: entities
       - entity: media_player.pioneer_avr
         type: media-control
-      - entity: media_player.sony_bravia_tv
+      - entity: media_player.living_room_tv
         type: media-control
       - entity: media_player.kodi
         type: media-control
