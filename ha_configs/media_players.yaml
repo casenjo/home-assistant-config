@@ -1,6 +1,3 @@
-- platform: braviatv
-  host: !secret tv_host
-
 - platform: onkyo
   host: !secret pioneer_host
   name: Pioneer AVR
