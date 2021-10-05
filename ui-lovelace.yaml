@@ -3,7 +3,7 @@ title: Home
 views:
   # Home view
   - badges:
-      - device_tracker.cristian
+      - person.cristian
       - sensor.dark_sky_temperature
       - sensor.hall_temperature
     cards:
