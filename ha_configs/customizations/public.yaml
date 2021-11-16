@@ -69,8 +69,3 @@ zwave.aeotec_zw090_zstick_gen5_us:
   hidden: true
 zwave.unknown_node_3:
   hidden: true
-media_player.sony_bravia_tv:
-  friendly_name: TV
-  icon: mdi:television
-  device_class: tv
-  source_list: [HDMI 1, HDMI 2, HDMI 3/ARC, HDMI 4, Netflix]
