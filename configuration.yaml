@@ -127,38 +127,49 @@ zha:
   database_path: /config/zigbee.db
 
 homekit:
-  auto_start: false
-  filter:
-    include_domains:
-      - light
-      - media_player
-      - device_tracker
-      - sensor
-    exclude_entities:
-      - sensor.dark_sky_dew_point
-      - sensor.dark_sky_apparent_temperature
-      - media_player.pioneer_vsx932
-      - media_player.pioneer_avr_zone_2
-  entity_config:
-    light.ambient_light_tv:
-      name: TV Light
-    light.ambient_light_counter:
-      name: Counter Light
-    light.table_light:
-      name: Entrance Light
-    sensor.hall_temperature:
-      name: Hall Temperature
-    media_player.office_speaker:
-      name: Office Speaker
-      feature_list:
-        - feature: play_pause
-        - feature: play_stop
-        - feature: toggle_mute
-    media_player.living_room_tv:
-      name: TV
-      feature_list:
-        - feature: on_off
-        - feature: toggle_mute
+  - name: HomekitBridge
+    auto_start: false
+    port: 21063
+    filter:
+      include_domains:
+        - light
+        - media_player
+        - device_tracker
+        - sensor
+      exclude_entities:
+        - sensor.dark_sky_dew_point
+        - sensor.dark_sky_apparent_temperature
+        - media_player.pioneer_vsx932
+        - media_player.pioneer_avr_zone_2
+    entity_config:
+      light.ambient_light_tv:
+        name: TV Light
+      light.ambient_light_counter:
+        name: Counter Light
+      light.table_light:
+        name: Entrance Light
+      sensor.hall_temperature:
+        name: Hall Temperature
+      media_player.office_speaker:
+        name: Office Speaker
+        feature_list:
+          - feature: play_pause
+          - feature: play_stop
+          - feature: toggle_mute
+
+  - name: HomekitBridgeTV
+    auto_start: false
+    port: 21064
+    mode: accessory
+    filter:
+      include_entities:
+        - media_player.living_room_tv
+    entity_config:
+      media_player.living_room_tv:
+        name: TV
+        feature_list:
+          - feature: on_off
+          - feature: toggle_mute
 
 # Services: SpeedTest
 speedtestdotnet:
