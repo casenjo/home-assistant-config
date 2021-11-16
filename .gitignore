@@ -12,7 +12,7 @@ www/custom_ui/floorplan/floorplan.svg
 automations.yaml
 bravia.conf
 home-assistant_v2.db*
-home-assistant.log
+home-assistant.log*
 known_devices.yaml
 private.yaml
 sabnzbd.conf
