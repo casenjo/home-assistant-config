@@ -164,12 +164,6 @@ homekit:
     filter:
       include_entities:
         - media_player.living_room_tv
-    entity_config:
-      media_player.living_room_tv:
-        name: TV
-        feature_list:
-          - feature: on_off
-          - feature: toggle_mute
 
 # Services: SpeedTest
 speedtestdotnet:
