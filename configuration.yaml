@@ -104,11 +104,6 @@ tts:
 
 media_player: !include ha_configs/media_players.yaml
 
-pi_hole:
-  - host: !secret pihole_host
-    ssl: true
-    verify_ssl: false
-
 scene: !include_dir_merge_list ha_configs/scenes
 group: !include ha_configs/groups.yaml
 automation: !include_dir_list ha_configs/automations
@@ -139,6 +134,8 @@ homekit:
       exclude_entities:
         - sensor.dark_sky_dew_point
         - sensor.dark_sky_apparent_temperature
+        - media_player.living_room_tv
+        - media_player.office_speaker
         - media_player.pioneer_vsx932
         - media_player.pioneer_avr_zone_2
     entity_config:
@@ -150,12 +147,6 @@ homekit:
         name: Entrance Light
       sensor.hall_temperature:
         name: Hall Temperature
-      media_player.office_speaker:
-        name: Office Speaker
-        feature_list:
-          - feature: play_pause
-          - feature: play_stop
-          - feature: toggle_mute
 
   - name: HomekitBridgeTV
     auto_start: false
@@ -203,15 +194,6 @@ input_datetime:
     initial: '16:00:00'
 
 wake_on_lan:
-
-webostv:
-  host: !secret tv_host
-  name: Living Room TV
-  turn_on_action:
-    service: wake_on_lan.send_magic_packet
-    data:
-      mac: !secret tv_mac
-      broadcast_address: !secret tv_host
 
 lifx:
   light:

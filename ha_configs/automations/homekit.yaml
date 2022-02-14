@@ -8,4 +8,4 @@ trigger:
   - platform: event
     event_type: zwave.network_complete_some_dead
 action:
-  service: homekit.start
+  service: homekit.reload

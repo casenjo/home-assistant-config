@@ -138,8 +138,6 @@ views:
       - entity: light.office_light
         name: ' '
         type: light
-      - entity: media_player.office_speaker
-        type: media-control
     icon: 'mdi:desktop-mac'
     path: office
     title: Office
