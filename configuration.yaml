@@ -110,13 +110,6 @@ automation: !include_dir_list ha_configs/automations
 script: !include_dir_merge_named ha_configs/scripts
 sensor: !include ha_configs/sensors.yaml
 
-zwave:
-  usb_path: /dev/ttyACM0
-  polling_interval: 30000
-  device_config:
-    light.bathroom_light_level:
-      polling_intensity: 1
-
 # Enable zigbee devices
 zha:
   database_path: /config/zigbee.db
