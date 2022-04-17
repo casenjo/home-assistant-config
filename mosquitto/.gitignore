@@ -1,0 +1,3 @@
+config/*.passwd
+data/*.db
+log/*
