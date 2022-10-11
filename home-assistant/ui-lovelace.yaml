@@ -21,6 +21,8 @@ views:
                 name: Bathroom Light
               - entity: light.right_nightstand_light
               - entity: light.left_nightstand_light
+              - entity: switch.garden_light_on_off
+                name: Garden Light
             title: Lights
             type: entities
         type: vertical-stack
@@ -136,8 +138,13 @@ views:
   - badges: []
     cards:
       - entity: light.office_light
-        name: ' '
-        type: light
+        name: Desk
+        type: entity-button
+        icon: 'mdi:lightbulb'
+      - entity: switch.garden_light_on_off
+        name: Garden
+        type: entity-button
+        icon: 'mdi:lightbulb'
     icon: 'mdi:desktop-mac'
     path: office
     title: Office
