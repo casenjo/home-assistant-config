@@ -3,3 +3,8 @@ living_room_lighting_mode_off:
     - service: homeassistant.turn_off
       data:
         entity_id: group.living_room_lights
+    - service: input_select.select_option
+      target:
+        entity_id: input_select.living_room_lighting_state
+      data:
+        option: 'Off'

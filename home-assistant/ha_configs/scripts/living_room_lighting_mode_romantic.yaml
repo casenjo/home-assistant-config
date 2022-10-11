@@ -30,3 +30,8 @@ living_room_lighting_mode_romantic:
         brightness: 255
         rgb_color: [255, 61, 192]
         transition: 0.5
+    - service: input_select.select_option
+      target:
+        entity_id: input_select.living_room_lighting_state
+      data:
+        option: Romantic

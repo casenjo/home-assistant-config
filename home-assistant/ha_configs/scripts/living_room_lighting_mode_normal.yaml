@@ -30,3 +30,8 @@ living_room_lighting_mode_normal:
         brightness: 255
         color_temp: 302
         transition: 0.5
+    - service: input_select.select_option
+      target:
+        entity_id: input_select.living_room_lighting_state
+      data:
+        option: Normal

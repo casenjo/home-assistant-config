@@ -30,3 +30,8 @@ living_room_lighting_mode_gaming:
         brightness: 68
         color_temp: 325
         transition: 0.5
+    - service: input_select.select_option
+      target:
+        entity_id: input_select.living_room_lighting_state
+      data:
+        option: Gaming
