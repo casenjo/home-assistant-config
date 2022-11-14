@@ -46,3 +46,10 @@ bedroom_lights:
     - light.right_nightstand_light
     - light.left_nightstand_light
   name: Bedroom Lights
+
+# Garden lights group
+garden_lights:
+  entities:
+    - switch.garden_light_1_on_off
+    - switch.garden_light_2_on_off
+  name: Garden Lights

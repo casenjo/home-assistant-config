@@ -1,8 +1,8 @@
-alias: Garden light on
+alias: Garden lights on
 initial_state: 'on'
 trigger:
   platform: time
   at: '07:00:00'
 action:
-  service: switch.turn_on
-  entity_id: switch.garden_light_on_off
+  service: homeassistant.turn_on
+  entity_id: group.garden_lights
