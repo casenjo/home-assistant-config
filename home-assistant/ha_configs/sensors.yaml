@@ -124,5 +124,3 @@
     {% set val = value | int %}
     {% set size = ((val * 0.954) / 1000000 | float) | round(2) %}
     {{ size }} TB
-
-- platform: uptime
