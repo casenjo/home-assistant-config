@@ -145,7 +145,7 @@ views:
         name: Garden
         type: entity-button
         icon: 'mdi:lightbulb'
-    icon: 'mdi:desktop-mac'
+    icon: 'mdi:monitor'
     path: office
     title: Office
   # System view
