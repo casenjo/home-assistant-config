@@ -174,13 +174,3 @@ input_datetime:
     initial: '16:00:00'
 
 wake_on_lan:
-
-lifx:
-  light:
-    - broadcast: !secret lifx_x_0
-    - broadcast: !secret lifx_x_1
-    - broadcast: !secret lifx_x_2
-    - broadcast: !secret lifx_x_3
-    - broadcast: !secret lifx_x_4
-    - broadcast: !secret lifx_x_5
-    - broadcast: !secret lifx_x_6
