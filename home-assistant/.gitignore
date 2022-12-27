@@ -25,5 +25,7 @@ options.xml
 pyozw.sqlite
 webostv.conf
 zigbee.db
+zigbee.db-shm
+zigbee.db-wal
 zwcfg_*.xml
 zwscene.xml
