@@ -147,11 +147,6 @@ speedtestdotnet:
   scan_interval:
     minutes: 60
 
-# Services: Fast.com
-fastdotcom:
-  scan_interval:
-    minutes: 90
-
 input_select:
   cristians_state:
     name: Cristian is...
