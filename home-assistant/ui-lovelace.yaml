@@ -164,7 +164,6 @@ views:
         - entities:
           - entity: sensor.speedtest_download
           - entity: sensor.speedtest_upload
-          - entity: sensor.fast_com_download
           type: custom:mini-graph-card
         type: vertical-stack
       - entities:
