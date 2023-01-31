@@ -169,3 +169,23 @@ input_datetime:
     initial: '16:00:00'
 
 wake_on_lan:
+
+influxdb:
+  api_version: 2
+  ssl: false
+  host: !secret grafana_host
+  port: !secret grafana_port
+  database: !secret grafana_database
+  token: !secret grafana_token
+  organization: !secret grafana_organization
+  bucket: !secret grafana_bucket
+  max_retries: 2
+  measurement_attr: entity_id
+  include:
+    entities:
+      - sensor.nas_temp_value
+      - sensor.nas_uptime
+      - sensor.nas_vol_1_free_numeric
+      - sensor.nas_vol_1_size
+      - sensor.nas_vol_2_free
+      - sensor.nas_vol_2_size
