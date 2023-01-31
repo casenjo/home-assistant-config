@@ -108,6 +108,15 @@
 - platform: snmp
   host: !secret nas
   community: !secret snmp_community
+  baseoid: 1.3.6.1.4.1.4526.22.7.1.6.1
+  name: 'NAS Vol 1 Free Numeric'
+  value_template: >-
+    {% set val = value | float %}
+    {{ val }}
+
+- platform: snmp
+  host: !secret nas
+  community: !secret snmp_community
   baseoid: 1.3.6.1.4.1.4526.22.7.1.5.2
   name: 'NAS Vol 2 Size'
   value_template: >-
