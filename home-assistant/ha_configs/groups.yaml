@@ -7,18 +7,16 @@ bedroom_scenes:
 living_room_lights:
   name: Lights
   entities:
-    - light.ambient_light_counter
-    - light.ambient_light_tv
     - light.ambient_light_wall
     - light.corner_light
     - light.window_light
+    - light.table_light
 
 
 # Arrival automation lights group
 arrival:
   entities:
-    - light.ambient_light_counter
-    - light.ambient_light_tv
+    - light.ambient_light_kitchen
     - light.ambient_light_wall
     - light.corner_light
     - light.table_light
@@ -28,7 +26,7 @@ arrival:
 # Departure automation lights group
 departure:
   entities:
-    - light.ambient_light_counter
+    - light.ambient_light_kitchen
     - light.ambient_light_tv
     - light.ambient_light_wall
     - light.corner_light

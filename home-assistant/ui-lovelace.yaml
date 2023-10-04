@@ -9,7 +9,8 @@ views:
     cards:
       - cards:
           - entities:
-              - entity: light.ambient_light_counter
+              - entity: light.ambient_light_kitchen
+                name: Ambient Light (Kitchen)
               - entity: light.ambient_light_tv
               - entity: light.ambient_light_wall
                 name: Ambient Light (Wall)
@@ -28,39 +29,8 @@ views:
         type: vertical-stack
       - entity: weather.dark_sky
         type: weather-forecast
-    icon: 'mdi:home'
     path: default_view
-    title: default_view
-  # Kitchen view
-  - badges: []
-    cards:
-      - entity: light.centralite_4257050rzhac_04ae3ef2_1
-        name: Kettle
-        type: entity-button
-        icon: 'mdi:kettle'
-      - entity: switch.osram_plug_01_00a26de0_3
-        name: Coffee Grinder
-        type: entity-button
-        icon: 'mdi:coffee-maker'
-    icon: 'mdi:fridge'
-    path: kitchen
-    title: Kitchen
-  # Bedroom view
-  - badges: []
-    cards:
-      - entity: light.right_nightstand_light
-        name: Right Nightstand
-        type: light
-      - entity: light.left_nightstand_light
-        name: Left Nightstand
-        theme: default
-        type: light
-      - entity: sensor.bedroom_temperature
-        type: sensor
-        graph: none
-    icon: 'mdi:bed'
-    path: bedroom
-    title: Bedroom
+    title: Home
   # Living Room View
   - badges: []
     cards:
@@ -101,39 +71,53 @@ views:
             service_data:
               entity_id:  script.living_room_lighting_mode_romantic
           icon: 'mdi:heart'
-        - entities:
-          - entity:
-          type: button
-          tap_action:
-            action: call-service
-            service: script.turn_on
-            service_data:
-              entity_id:  script.living_room_lighting_mode_gaming
-          icon: 'mdi:movie'
         type: horizontal-stack
       - entities:
-          - entity: light.ambient_light_counter
-          - entity: light.ambient_light_tv
           - entity: light.ambient_light_wall
             name: Ambient Light (Wall)
           - entity: light.corner_light
           - entity: light.window_light
+          - entity: light.table_light
         show_header_toggle: true
         title: Lights
         type: entities
-      - entity: media_player.pioneer_avr
-        type: media-control
-      - entity: media_player.living_room_tv
-        type: media-control
-      - entity: media_player.kodi
-        type: media-control
       - entities:
           - light.corner_light
         type: picture-glance
         image: http://telepathic:8082/0/current.jpg
-    icon: 'mdi:sofa'
     path: living_room
     title: Living Room
+  # Kitchen view
+  - badges: []
+    cards:
+      - entity: light.centralite_4257050rzhac_04ae3ef2_1
+        name: Kettle
+        type: entity-button
+        icon: 'mdi:kettle'
+      - entity: switch.osram_plug_01_00a26de0_3
+        name: Coffee Grinder
+        type: entity-button
+        icon: 'mdi:coffee-maker'
+      - entity: light.ambient_light_kitchen
+        name: Ambient Light
+        type: light
+    path: kitchen
+    title: Kitchen
+  # Bedroom view
+  - badges: []
+    cards:
+      - entity: light.right_nightstand_light
+        name: Right Nightstand
+        type: light
+      - entity: light.left_nightstand_light
+        name: Left Nightstand
+        theme: default
+        type: light
+      - entity: sensor.bedroom_temperature
+        type: sensor
+        graph: none
+    path: bedroom
+    title: Bedroom
   # Office view
   - badges: []
     cards:
@@ -145,9 +129,33 @@ views:
         name: Garden
         type: entity-button
         icon: 'mdi:lightbulb'
-    icon: 'mdi:monitor'
     path: office
     title: Office
+  # Basement view
+  - badges: []
+    cards:
+      - entity: light.ambient_light_tv
+        name: Ambient Light (TV)
+        type: light
+      - entity: media_player.pioneer_avr
+        type: media-control
+      - entity: media_player.living_room_tv
+        type: media-control
+      - entity: media_player.kodi
+        type: media-control
+      - cards:
+        - entities:
+          - entity:
+          type: button
+          tap_action:
+            action: call-service
+            service: script.turn_on
+            service_data:
+              entity_id:  script.basement_lighting_mode_gaming
+          icon: 'mdi:movie'
+        type: horizontal-stack
+    path: basement
+    title: Basement
   # System view
   - badges: []
     cards:
@@ -215,6 +223,5 @@ views:
         show_header_toggle: false
         title: Battery Levels
         type: entities
-    icon: 'mdi:cog'
     path: system
     title: System
