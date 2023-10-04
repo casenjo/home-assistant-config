@@ -166,7 +166,7 @@ input_datetime:
     name: Lighting On Time
     has_date: false
     has_time: true
-    initial: '16:00:00'
+    initial: '18:00:00'
 
 wake_on_lan:
 
@@ -188,4 +188,3 @@ influxdb:
       - sensor.nas_vol_1_free_numeric
       - sensor.nas_vol_1_size
       - sensor.nas_vol_2_free
-      - sensor.nas_vol_2_size
