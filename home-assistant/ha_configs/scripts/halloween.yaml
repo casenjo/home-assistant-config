@@ -1,0 +1,79 @@
+halloween_blood:
+  alias: "Halloween Blood"
+  sequence:
+    # This is Home Assistant Script Syntax
+    - service: light.turn_on
+      data:
+        entity_id: light.entrance_door_light
+        rgb_color:
+          - 255
+          - 0
+          - 0
+    - service: mqtt.publish
+      data:
+        topic: homeassistant/falcon/player/FalconPlayer/set/command
+        payload: "{\"command\":\"Start Playlist At Item\",\"args\":[\"Halloween-Blood\",1,true,false]}"
+    - service: mqtt.publish
+      data:
+        topic: homeassistant/falcon/player/FalconRemote/set/command
+        payload: "{\"command\":\"Start Playlist At Item\",\"args\":[\"Halloween-Blood\",1,true,false]}"
+halloween_eyes:
+  alias: "Halloween Eyes"
+  sequence:
+    # This is Home Assistant Script Syntax
+    - service: mqtt.publish
+      data:
+        topic: homeassistant/falcon/player/FalconPlayer/set/command
+        payload: "{\"command\":\"Start Playlist At Item\",\"args\":[\"Halloween-Eyes\",1,true,false]}"
+    - service: mqtt.publish
+      data:
+        topic: homeassistant/falcon/player/FalconRemote/set/command
+        payload: "{\"command\":\"Start Playlist At Item\",\"args\":[\"Halloween-Eyes\",1,true,false]}"
+halloween_ghosts:
+  alias: "Halloween Ghosts"
+  sequence:
+    # This is Home Assistant Script Syntax
+    - service: mqtt.publish
+      data:
+        topic: homeassistant/falcon/player/FalconPlayer/set/command
+        payload: "{\"command\":\"Start Playlist At Item\",\"args\":[\"Halloween-GhostWall\",1,true,false]}"
+    - service: mqtt.publish
+      data:
+        topic: homeassistant/falcon/player/FalconRemote/set/command
+        payload: "{\"command\":\"Start Playlist At Item\",\"args\":[\"Halloween-GhostWall\",1,true,false]}"
+halloween_stop:
+  alias: "Halloween Stop"
+  sequence:
+    # This is Home Assistant Script Syntax
+    - service: mqtt.publish
+      data:
+        topic: homeassistant/falcon/player/FalconPlayer/set/command
+        payload: "{\"command\":\"Stop Now\",\"args\":[]}"
+    - service: mqtt.publish
+      data:
+        topic: homeassistant/falcon/player/FalconRemote/set/command
+        payload: "{\"command\":\"Stop Now\",\"args\":[]}"
+halloween_zombies:
+  alias: "Halloween Zombies"
+  sequence:
+    # This is Home Assistant Script Syntax
+    - service: mqtt.publish
+      data:
+        topic: homeassistant/falcon/player/FalconPlayer/set/command
+        payload: "{\"command\":\"Start Playlist At Item\",\"args\":[\"Halloween-Zombies\",1,true,false]}"
+    - service: mqtt.publish
+      data:
+        topic: homeassistant/falcon/player/FalconRemote/set/command
+        payload: "{\"command\":\"Start Playlist At Item\",\"args\":[\"Halloween-Zombies\",1,true,false]}"
+halloween_monsters:
+  alias: "Halloween Monsters"
+  sequence:
+    # This is Home Assistant Script Syntax
+    - service: mqtt.publish
+      data:
+        topic: homeassistant/falcon/player/FalconPlayer/set/command
+        payload: "{\"command\":\"Start Playlist At Item\",\"args\":[\"Halloween-ZombieSkeletons\",1,true,false]}"
+    - service: mqtt.publish
+      data:
+        topic: homeassistant/falcon/player/FalconRemote/set/command
+        payload: "{\"command\":\"Start Playlist At Item\",\"args\":[\"Halloween-ZombieSkeletons\",1,true,false]}"
