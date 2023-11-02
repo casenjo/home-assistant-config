@@ -36,9 +36,6 @@ config:
 
 http:
 
-# Discover some devices automatically
-discovery:
-
 # Allows you to issue voice commands from the frontend in enabled browsers
 conversation:
 
@@ -84,11 +81,6 @@ logbook:
 
 # Track the sun
 sun:
-
-weather:
-  - platform: darksky
-    api_key: !secret darksky_api_key
-    mode: 'hourly'
 
 # Text to speech
 tts:
@@ -142,11 +134,6 @@ homekit:
       include_entities:
         - media_player.living_room_tv
 
-# Services: SpeedTest
-speedtestdotnet:
-  scan_interval:
-    minutes: 60
-
 input_select:
   cristians_state:
     name: Cristian is...
@@ -170,21 +157,11 @@ input_datetime:
 
 wake_on_lan:
 
-influxdb:
-  api_version: 2
-  ssl: false
-  host: !secret grafana_host
-  port: !secret grafana_port
-  database: !secret grafana_database
-  token: !secret grafana_token
-  organization: !secret grafana_organization
-  bucket: !secret grafana_bucket
-  max_retries: 2
-  measurement_attr: entity_id
-  include:
-    entities:
-      - sensor.nas_temp_value
-      - sensor.nas_uptime
-      - sensor.nas_vol_1_free_numeric
-      - sensor.nas_vol_1_size
-      - sensor.nas_vol_2_free
+mqtt:
+  sensor:
+    unique_id: player_status
+    name: "Status"
+    state_topic: "homeassistant/falcon/player/FalconPlayer/status"
+    device:
+      name: "FalconPlayer"
+      identifiers: "A4:C1:38:EB:49:E0"
