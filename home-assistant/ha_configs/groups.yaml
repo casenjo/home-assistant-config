@@ -8,7 +8,7 @@ living_room_lights:
   name: Lights
   entities:
     - light.ambient_light_wall
-    - light.corner_light
+    - light.dining_room_light
     - light.window_light
     - light.table_light
 
@@ -18,7 +18,7 @@ arrival:
   entities:
     - light.ambient_light_kitchen
     - light.ambient_light_wall
-    - light.corner_light
+    - light.dining_room_light
     - light.table_light
     - light.window_light
   name: Arrival
@@ -29,7 +29,7 @@ departure:
     - light.ambient_light_kitchen
     - light.ambient_light_tv
     - light.ambient_light_wall
-    - light.corner_light
+    - light.dining_room_light
     - light.table_light
     - light.window_light
     - light.right_nightstand_light

@@ -4,17 +4,17 @@ views:
   # Home view
   - badges:
       - person.cristian
-      - sensor.dark_sky_temperature
-      - sensor.hall_temperature
+      - weather.the_lair
     cards:
       - cards:
           - entities:
+              - entity: light.entrance_door_light
               - entity: light.ambient_light_kitchen
                 name: Ambient Light (Kitchen)
               - entity: light.ambient_light_tv
               - entity: light.ambient_light_wall
                 name: Ambient Light (Wall)
-              - entity: light.corner_light
+              - entity: light.dining_room_light
               - entity: light.window_light
               - entity: light.table_light
               - entity: light.office_light
@@ -27,8 +27,6 @@ views:
             title: Lights
             type: entities
         type: vertical-stack
-      - entity: weather.dark_sky
-        type: weather-forecast
     path: default_view
     title: Home
   # Living Room View
@@ -75,16 +73,12 @@ views:
       - entities:
           - entity: light.ambient_light_wall
             name: Ambient Light (Wall)
-          - entity: light.corner_light
+          - entity: light.dining_room_light
           - entity: light.window_light
           - entity: light.table_light
         show_header_toggle: true
         title: Lights
         type: entities
-      - entities:
-          - light.corner_light
-        type: picture-glance
-        image: http://telepathic:8082/0/current.jpg
     path: living_room
     title: Living Room
   # Kitchen view
@@ -225,3 +219,53 @@ views:
         type: entities
     path: system
     title: System
+  # Halloween view
+  # - badges: []
+  #   cards:
+  #     - entity: sensor.falconplayer_falcon_player_status
+  #       name: Falcon Player
+  #       type: sensor
+  #     - entity: script.halloween_stop
+  #       name: Stop
+  #       type: entity-button
+  #       tap_action:
+  #         action: call-service
+  #         service: script.halloween_stop
+  #       icon: 'mdi:stop'
+  #     - entity: script.halloween_blood
+  #       name: Blood
+  #       type: entity-button
+  #       tap_action:
+  #         action: call-service
+  #         service: script.halloween_blood
+  #       icon: 'mdi:water-outline'
+  #     - entity: script.halloween_eyes
+  #       name: Eyes
+  #       type: entity-button
+  #       tap_action:
+  #         action: call-service
+  #         service: script.halloween_eyes
+  #       icon: 'mdi:eye-outline'
+  #     - entity: script.halloween_monsters
+  #       name: Monsters
+  #       type: entity-button
+  #       tap_action:
+  #         action: call-service
+  #         service: script.halloween_monsters
+  #       icon: 'mdi:coffin'
+  #     - entity: script.halloween_zombies
+  #       name: Zombies
+  #       type: entity-button
+  #       tap_action:
+  #         action: call-service
+  #         service: script.halloween_zombies
+  #       icon: 'mdi:emoticon-dead'
+  #     - entity: script.halloween_ghosts
+  #       name: ghosts
+  #       type: entity-button
+  #       tap_action:
+  #         action: call-service
+  #         service: script.halloween_ghosts
+  #       icon: 'mdi:ghost'
+  #   path: halloween
+  #   title: Halloween
