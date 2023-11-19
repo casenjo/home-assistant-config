@@ -153,7 +153,7 @@ input_datetime:
     name: Lighting On Time
     has_date: false
     has_time: true
-    initial: '18:00:00'
+    initial: '17:00:00'
 
 wake_on_lan:
 
