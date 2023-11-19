@@ -9,7 +9,7 @@ living_room_lights:
   entities:
     - light.ambient_light_wall
     - light.dining_room_light
-    - light.window_light
+    - light.corner_light
     - light.table_light
 
 

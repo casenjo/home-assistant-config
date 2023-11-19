@@ -6,27 +6,58 @@ views:
       - person.cristian
       - weather.the_lair
     cards:
-      - cards:
-          - entities:
-              - entity: light.entrance_door_light
-              - entity: light.ambient_light_kitchen
-                name: Ambient Light (Kitchen)
-              - entity: light.ambient_light_tv
-              - entity: light.ambient_light_wall
-                name: Ambient Light (Wall)
-              - entity: light.dining_room_light
-              - entity: light.window_light
-              - entity: light.table_light
-              - entity: light.office_light
-              - entity: light.bathroom_light
-                name: Bathroom Light
-              - entity: light.right_nightstand_light
-              - entity: light.left_nightstand_light
-              - entity: group.garden_lights
-                name: Garden Light
-            title: Lights
-            type: entities
-        type: vertical-stack
+      - entities:
+          - entity: light.ambient_light_wall
+            name: Ambient Light (Wall)
+          - entity: light.dining_room_light
+          - entity: light.corner_light
+          - entity: light.table_light
+        show_header_toggle: true
+        title: Living Room
+        type: entities
+      - entities:
+          - entity: light.ambient_light_kitchen
+            name: Ambient Light
+        show_header_toggle: true
+        title: Kitchen
+        type: entities
+      - entities:
+          - entity: light.right_nightstand_light
+          - entity: light.left_nightstand_light
+        show_header_toggle: true
+        title: Bedroom
+        type: entities
+      - entities:
+          - entity: light.ambient_light_tv
+        show_header_toggle: true
+        title: Basement
+        type: entities
+      - entities:
+          - entity: light.office_light
+        show_header_toggle: true
+        title: Office
+        type: entities
+    #   - cards:
+    #       - entities:
+    #           - entity: light.entrance_door_light
+    #           - entity: light.ambient_light_kitchen
+    #             name: Ambient Light (Kitchen)
+    #           - entity: light.ambient_light_tv
+    #           - entity: light.ambient_light_wall
+    #             name: Ambient Light (Wall)
+    #           - entity: light.dining_room_light
+    #           - entity: light.window_light
+    #           - entity: light.table_light
+    #           - entity: light.office_light
+    #           - entity: light.bathroom_light
+    #             name: Bathroom Light
+    #           - entity: light.right_nightstand_light
+    #           - entity: light.left_nightstand_light
+    #           - entity: group.garden_lights
+    #             name: Garden Light
+    #         title: Lights
+    #         type: entities
+    #     type: vertical-stack
     path: default_view
     title: Home
   # Living Room View
@@ -74,7 +105,7 @@ views:
           - entity: light.ambient_light_wall
             name: Ambient Light (Wall)
           - entity: light.dining_room_light
-          - entity: light.window_light
+          - entity: light.corner_light
           - entity: light.table_light
         show_header_toggle: true
         title: Lights
@@ -158,65 +189,51 @@ views:
         type: entities
       - cards:
         - entities:
-          - entity: sensor.pi_hole_ads_blocked_today
-          type: custom:mini-graph-card
-          show:
-            points: true
-            labels: false
-        - entities:
           - entity: sensor.speedtest_download
           - entity: sensor.speedtest_upload
           type: custom:mini-graph-card
         type: vertical-stack
-      - entities:
-        - entity: sensor.hydroquebec_yesterday_total_consumption
-        name: Power Consumption
-        hours_to_show: 168
-        points_per_hour: 0.0417
-        type: custom:mini-graph-card
-        show:
-          graph: bar
-      - entities:
-        - entity: sensor.nas_fan_rpm
-          icon: 'mdi:fan'
-        - entity: sensor.nas_temp_value
-          name: Overall Temp
-        - entity: sensor.nas_uptime
-          icon: 'mdi:av-timer'
-        - entity: sensor.nas_vol_1_free
-          icon: 'mdi:chart-donut'
-          name: Vol 1 Free Space
-        - entity: sensor.nas_vol_1_size
-          icon: 'mdi:harddisk'
-          name: Vol 1 Total Space
-        - entity: sensor.nas_vol_2_free
-          icon: 'mdi:chart-donut'
-          name: Vol 2 Free Space
-        - entity: sensor.nas_vol_2_size
-          icon: 'mdi:harddisk'
-          name: Vol 2 Total Space
-        show_header_toggle: false
-        title: Netgear ReadyNAS
-        type: entities
-      - entities:
-        - entity: sensor.motion_hallway_battery
-          icon: 'mdi:motion-sensor'
-          name: Hallway Motion Sensor
-        - entity: sensor.motion_office_battery
-          icon: 'mdi:motion-sensor'
-          name: Office Motion Sensor
-        - entity: sensor.motion_bedroom_battery
-          icon: 'mdi:motion-sensor'
-          name: Bedroom Motion Sensor
-        - entity: sensor.button_living_room_battery
-          icon: 'mdi:toggle-switch'
-          name: Living Room Button
-        - entity: sensor.button_bedroom_battery
-          icon: 'mdi:toggle-switch'
-          name: Bedroom Button
-        show_header_toggle: false
-        title: Battery Levels
-        type: entities
+      # - entities:
+      #   - entity: sensor.nas_fan_rpm
+      #     icon: 'mdi:fan'
+      #   - entity: sensor.nas_temp_value
+      #     name: Overall Temp
+      #   - entity: sensor.nas_uptime
+      #     icon: 'mdi:av-timer'
+      #   - entity: sensor.nas_vol_1_free
+      #     icon: 'mdi:chart-donut'
+      #     name: Vol 1 Free Space
+      #   - entity: sensor.nas_vol_1_size
+      #     icon: 'mdi:harddisk'
+      #     name: Vol 1 Total Space
+      #   - entity: sensor.nas_vol_2_free
+      #     icon: 'mdi:chart-donut'
+      #     name: Vol 2 Free Space
+      #   - entity: sensor.nas_vol_2_size
+      #     icon: 'mdi:harddisk'
+      #     name: Vol 2 Total Space
+      #   show_header_toggle: false
+      #   title: Netgear ReadyNAS
+      #   type: entities
+      # - entities:
+      #   - entity: sensor.motion_hallway_battery
+      #     icon: 'mdi:motion-sensor'
+      #     name: Hallway Motion Sensor
+      #   - entity: sensor.motion_office_battery
+      #     icon: 'mdi:motion-sensor'
+      #     name: Office Motion Sensor
+      #   - entity: sensor.motion_bedroom_battery
+      #     icon: 'mdi:motion-sensor'
+      #     name: Bedroom Motion Sensor
+      #   - entity: sensor.button_living_room_battery
+      #     icon: 'mdi:toggle-switch'
+      #     name: Living Room Button
+      #   - entity: sensor.button_bedroom_battery
+      #     icon: 'mdi:toggle-switch'
+      #     name: Bedroom Button
+      #   show_header_toggle: false
+      #   title: Battery Levels
+      #   type: entities
     path: system
     title: System
   # Halloween view

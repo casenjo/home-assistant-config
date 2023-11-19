@@ -3,24 +3,23 @@ living_room_lighting_mode_normal:
     - service: light.turn_on
       data:
         entity_id: light.dining_room_light
-        brightness: 255
-        color_temp: 287
-        transition: 2
+        kelvin: 3521
+        transition: 4
     - service: light.turn_on
       data:
-        entity_id: light.window_light
-        brightness: 255
-        color_temp: 266
-        transition: 2
+        entity_id: light.corner_light
+        kelvin: 3521
+        transition: 4
     - service: light.turn_on
       data:
         entity_id: light.ambient_light_wall
-        brightness: 255
-        color_temp: 302
-        transition: 2
+        kelvin: 3521
+        transition: 4
     - service: light.turn_on
       data:
         entity_id: light.table_light
+        kelvin: 3521
+        transition: 4
     - service: input_select.select_option
       target:
         entity_id: input_select.living_room_lighting_state

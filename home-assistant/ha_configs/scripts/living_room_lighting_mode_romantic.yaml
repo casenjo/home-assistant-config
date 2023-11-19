@@ -4,24 +4,30 @@ living_room_lighting_mode_romantic:
       data:
         entity_id: light.dining_room_light
         xy_color:
-          - 0.411
-          - 0.168
+          - 0.41709
+          - 0.236652
         transition: 4
     - service: light.turn_on
       data:
-        entity_id: light.window_light
-        brightness: 255
-        rgb_color: [255, 61, 192]
+        entity_id: light.corner_light
+        xy_color:
+          - 0.415
+          - 0.239
         transition: 4
     - service: light.turn_on
       data:
         entity_id: light.ambient_light_wall
-        brightness: 255
-        rgb_color: [255, 61, 192]
+        xy_color:
+          - 0.474
+          - 0.252
         transition: 4
-    - service: light.turn_off
+    - service: light.turn_on
       data:
         entity_id: light.table_light
+        xy_color:
+          - 0.455818
+          - 0.269215
+        transition: 4
     - service: input_select.select_option
       target:
         entity_id: input_select.living_room_lighting_state
