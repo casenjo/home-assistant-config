@@ -1,0 +1,13 @@
+alias: Alert about UPS battery activation
+initial_state: 'on'
+trigger:
+  platform: state
+  entity_id: sensor.ups_status_data
+  to: 'OB DISCHRG'
+  for:
+    minutes: 1
+action:
+  service: notify.mobile_app_little_ghost
+  data:
+    message: UPS battery power has activated
+    title: The Lair

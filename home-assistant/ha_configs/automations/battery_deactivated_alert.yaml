@@ -1,0 +1,13 @@
+alias: Alert about UPS battery deactivation
+initial_state: 'on'
+trigger:
+  platform: state
+  entity_id: sensor.ups_status_data
+  to: 'OL CHRG'
+  for:
+    minutes: 3
+action:
+  service: notify.mobile_app_little_ghost
+  data:
+    message: UPS battery power has deactivated, on line power
+    title: The Lair
