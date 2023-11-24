@@ -82,9 +82,9 @@ homekit:
         - media_player
         - device_tracker
         - sensor
+        - switch
       exclude_entities:
-        - sensor.dark_sky_dew_point
-        - sensor.dark_sky_apparent_temperature
+        - light.table_light_old
         - media_player.living_room_tv
         - media_player.office_speaker
         - media_player.pioneer_vsx932
