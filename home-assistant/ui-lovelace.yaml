@@ -37,6 +37,12 @@ views:
         show_header_toggle: true
         title: Office
         type: entities
+      - entities:
+          - entity: light.entrance_door_light
+          - entity: group.garden_lights
+        show_header_toggle: true
+        title: Misc
+        type: entities
     #   - cards:
     #       - entities:
     #           - entity: light.entrance_door_light
@@ -193,6 +199,17 @@ views:
           - entity: sensor.speedtest_upload
           type: custom:mini-graph-card
         type: vertical-stack
+      - type: entities
+        entities:
+          - entity: sensor.ups_battery_charge
+            name: Battery charge
+          - entity: sensor.ups_input_voltage
+            name: Input voltage
+          - entity: sensor.ups_status
+            name: Status
+          - entity: sensor.ups_status_data
+            name: Status data
+        title: UPS
       # - entities:
       #   - entity: sensor.nas_fan_rpm
       #     icon: 'mdi:fan'
