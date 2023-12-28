@@ -2,24 +2,28 @@ living_room_lighting_mode_normal:
   sequence:
     - service: light.turn_on
       data:
-        entity_id: light.dining_room_light
+        entity_id: light.bookshelf_light
         kelvin: 3521
-        transition: 4
     - service: light.turn_on
       data:
         entity_id: light.corner_light
         kelvin: 3521
-        transition: 4
     - service: light.turn_on
       data:
         entity_id: light.ambient_light_wall
         kelvin: 3521
-        transition: 4
+    - service: light.turn_on
+      data:
+        entity_id: light.drinks_light
+        kelvin: 3521
     - service: light.turn_on
       data:
         entity_id: light.table_light
         kelvin: 3521
-        transition: 4
+    - service: light.turn_on
+      data:
+        entity_id: light.dining_room_light
+        kelvin: 3521
     - service: input_select.select_option
       target:
         entity_id: input_select.living_room_lighting_state

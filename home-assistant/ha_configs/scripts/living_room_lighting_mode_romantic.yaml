@@ -2,32 +2,42 @@ living_room_lighting_mode_romantic:
   sequence:
     - service: light.turn_on
       data:
-        entity_id: light.dining_room_light
+        entity_id: light.bookshelf_light
         xy_color:
           - 0.41709
           - 0.236652
-        transition: 4
+        transition: 2
     - service: light.turn_on
       data:
         entity_id: light.corner_light
         xy_color:
           - 0.415
           - 0.239
-        transition: 4
+        transition: 2
     - service: light.turn_on
       data:
         entity_id: light.ambient_light_wall
         xy_color:
           - 0.474
           - 0.252
-        transition: 4
+        transition: 2
     - service: light.turn_on
       data:
-        entity_id: light.table_light
+        entity_id: light.drinks_light
         xy_color:
           - 0.455818
           - 0.269215
-        transition: 4
+        transition: 2
+    - service: light.turn_on
+      data:
+        entity_id: light.dining_room_light
+        xy_color:
+          - 0.455818
+          - 0.269215
+        transition: 2
+    - service: light.turn_off
+      data:
+        entity_id: light.table_light
     - service: input_select.select_option
       target:
         entity_id: input_select.living_room_lighting_state
