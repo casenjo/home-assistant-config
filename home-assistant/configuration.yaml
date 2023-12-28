@@ -83,12 +83,14 @@ homekit:
         - device_tracker
         - sensor
         - switch
+        - binary_sensor
       exclude_entities:
         - light.table_light_old
         - media_player.living_room_tv
         - media_player.office_speaker
         - media_player.pioneer_vsx932
         - media_player.pioneer_avr_zone_2
+        - binary_sensor.aqara_lumi_motion_ac01_identify
     entity_config:
       light.ambient_light_tv:
         name: TV Light
