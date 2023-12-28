@@ -1,11 +1,12 @@
 alias: Turn on bedroom lights
 initial_state: 'on'
+# Trigger comes from UI->yaml conversion of automation creation from the UI
 trigger:
+  platform: device
   device_id: 60dd1386f624b53fcf30f8e188a4804c
   domain: zha
-  platform: device
-  type: Enter
   subtype: sensor
+  type: Enter
 condition:
   condition: and
   conditions:
