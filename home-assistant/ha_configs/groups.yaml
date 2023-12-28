@@ -7,11 +7,12 @@ bedroom_scenes:
 living_room_lights:
   name: Lights
   entities:
-    - light.ambient_light_wall
-    - light.dining_room_light
+    - light.bookshelf_light
     - light.corner_light
+    - light.ambient_light_wall
+    - light.drinks_light
     - light.table_light
-
+    - light.dining_room_light
 
 # Arrival automation lights group
 arrival:
