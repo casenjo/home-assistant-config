@@ -5,8 +5,8 @@ trigger:
   entity_id: 'device_tracker.cristian'
   to: 'home'
 condition:
-  condition: time
-  after: '17:30:00'
+  condition: template
+  value_template: '{{ now().time().strftime("%T") > states("input_datetime.lighting_on_time") }}'
 action:
   service: homeassistant.turn_on
   entity_id: group.arrival
