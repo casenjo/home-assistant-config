@@ -1,3 +1,4 @@
+configuration.yml
 homeassistant:
   # Name of the location where Home Assistant is running
   name: Home
@@ -14,6 +15,13 @@ homeassistant:
   time_zone: America/Montreal
   # Customization file
   customize: !include_dir_merge_named ha_configs/customizations/
+
+zone:
+  - name: Home
+    latitude: !secret home_lat
+    longitude: !secret home_lng
+    radius: 25
+    icon: mdi:home
 
 # Enables the system health component
 system_health:
@@ -129,6 +137,10 @@ input_datetime:
     has_date: false
     has_time: true
     initial: '16:30:00'
+
+input_boolean:
+  dryer_is_on:
+    name: Dryer
 
 wake_on_lan:
 
