@@ -1,3 +1,4 @@
+lovelace
 title: Home
 
 views:
@@ -92,6 +93,12 @@ views:
         show_header_toggle: true
         title: Lights
         type: entities
+      - cards:
+        - entities:
+          - entity: switch.living_room_wallflower_switch
+            name: Wallflower
+          type: entities
+        type: horizontal-stack
     path: living_room
     title: Living Room
   # Kitchen view
