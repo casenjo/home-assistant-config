@@ -1,0 +1,13 @@
+alias: Kettle Has Boiled
+initial_state: 'on'
+trigger:
+  platform: state
+  entity_id: sensor.centralite_4257050_rzhac_f23eae04_electrical_measurement_rms_current
+  to: '0.0'
+  for:
+    seconds: 3
+action:
+  service: notify.mobile_app_little_ghost
+  data:
+    title: The Lair
+    message: The kettle finished boiling water
