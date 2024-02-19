@@ -9,5 +9,5 @@ trigger:
 action:
   service: notify.mobile_app_little_ghost
   data:
-    message: UPS battery power has activated
     title: The Lair
+    message: UPS battery power has activated
