@@ -17,11 +17,7 @@ living_room_lights:
 # Arrival automation lights group
 arrival:
   entities:
-    - light.ambient_light_kitchen
-    - light.ambient_light_wall
-    - light.dining_room_light
-    - light.table_light
-    - light.window_light
+    - group.living_room_lights
   name: Arrival
 
 # Departure automation lights group
