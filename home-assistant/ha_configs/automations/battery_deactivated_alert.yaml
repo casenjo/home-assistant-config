@@ -3,11 +3,11 @@ initial_state: 'on'
 trigger:
   platform: state
   entity_id: sensor.ups_status_data
-  to: 'OL CHRG'
+  from: 'OB DISCHRG'
   for:
-    minutes: 3
+    seconds: 1
 action:
   service: notify.mobile_app_little_ghost
   data:
-    message: UPS battery power has deactivated, on line power
     title: The Lair
+    message: UPS battery power has deactivated, on line power

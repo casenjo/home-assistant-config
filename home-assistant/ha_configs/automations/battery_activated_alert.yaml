@@ -5,7 +5,7 @@ trigger:
   entity_id: sensor.ups_status_data
   to: 'OB DISCHRG'
   for:
-    minutes: 1
+    seconds: 1
 action:
   service: notify.mobile_app_little_ghost
   data:
