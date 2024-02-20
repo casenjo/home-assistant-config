@@ -1,4 +1,3 @@
-configuration.yml
 homeassistant:
   # Name of the location where Home Assistant is running
   name: Home
@@ -144,11 +143,11 @@ input_boolean:
 
 wake_on_lan:
 
-mqtt:
-  sensor:
-    unique_id: player_status
-    name: "Status"
-    state_topic: "homeassistant/falcon/player/FalconPlayer/status"
-    device:
-      name: "FalconPlayer"
-      identifiers: "A4:C1:38:EB:49:E0"
+# mqtt:
+#   sensor:
+#     unique_id: player_status
+#     name: "Status"
+#     state_topic: "homeassistant/falcon/player/FalconPlayer/status"
+#     device:
+#       name: "FalconPlayer"
+#       identifiers: "A4:C1:38:EB:49:E0"
